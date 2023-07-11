@@ -32,14 +32,19 @@
     font-weight: 700;
 }
 
+.top{
+    display: flex;
+
+}
+
 .Home {
-    margin: 250px 300px 0 300px;
+    margin: 250px 375px 0 375px;
 }
 
 .heading {
     font-size: 50px;
     font-weight: 700;
-    margin: 0;
+    margin: 0 290px 0 0;
     padding: 0;
     text-align: left;
     color: #111;
@@ -68,4 +73,46 @@
 .github {
     width: 30px;
     padding-left: 5px;
+}
+
+.images {
+    display: flex;
+    width: 270px; /* Adjust the dimensions as per your requirements */
+    height: 270px;
+    border-radius: 50%; /* This creates the circle shape */
+    overflow: hidden; /* Clips the image to the container's shape */
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+.tech-stack{
+    margin: 150px 0 0 0;
+    display: flex;
+    text-align: center;
+}
+
+.languages{
+    font-size: 20px;
+    width: 30%;
+}
+
+.languages span{
+    margin-left: 60px;
+    font-size: 20px;
+    height: 60px;
+    font-weight: 300;
+}
+
+.language-logos{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.logo{
+    width: 30px;
+    padding: 0 40px;
 }
