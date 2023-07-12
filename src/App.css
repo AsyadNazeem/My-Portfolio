@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap');
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
 
 .Navbar {
     display: flex;
@@ -5,6 +10,7 @@
 
 .navbar-header {
     font-size: 20px;
+    margin-left: 30px;
 }
 
 .nav-links {
@@ -19,7 +25,7 @@
     padding: 17.5px;
     text-align: right;
     justify-content: flex-end;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .Navbar li:hover {
@@ -46,11 +52,12 @@
 
 .top {
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .Home {
-    margin: 180px 375px 0 375px;
+    margin: 180px 0;
 }
 
 .heading {
@@ -103,16 +110,18 @@
 .tech-stack {
     margin: 150px 0 0 0;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .languages {
     font-size: 20px;
-    width: 30%;
+    width: 10%;
+    text-align: center;
 }
 
 .languages span {
-    margin-left: 60px;
+    margin-left: 50px;
     font-size: 20px;
     height: 60px;
     font-weight: 300;
@@ -120,15 +129,22 @@
 
 .language-logos {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    width: 30px;
-    padding: 0 40px;
+    width: 20px;
+    padding: 10px 40px;
 }
 
+@media screen and (max-width: 1400px){
+    .languages {
+        font-size: 20px;
+        width: 20%;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .Navbar {
@@ -136,11 +152,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-
     }
 
     .navbar-header {
         font-size: 15px;
+        margin-left: 20px;
     }
 
     .nav-links {
@@ -196,4 +212,100 @@
         color: white;
     }
 
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Home {
+        margin: 50px 25px;
+    }
+
+    .heading {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0 0 0 0;
+        padding: 0;
+        text-align: center;
+        color: #111;
+    }
+
+    .sub-heading {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px 0;
+        padding: 0;
+        text-align: center;
+        color: gray;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+
+    .linkedin {
+        width: 30px;
+    }
+
+    .github {
+        width: 30px;
+        padding-left: 5px;
+    }
+
+    .images {
+        display: flex;
+        width: 200px; /* Adjust the dimensions as per your requirements */
+        height: 200px;
+        margin: auto;
+        border-radius: 50%; /* This creates the circle shape */
+        overflow: hidden; /* Clips the image to the container's shape */
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tech-stack {
+        /*margin: 100px 0 0 0;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .languages {
+        font-size: 10px;
+        /*width: 20%;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .languages span {
+        margin-left: 30%;
+        font-size: 13px;
+        height: 20px;
+        font-weight: 200;
+    }
+
+    .language-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    .logo {
+        width: 20px;
+        padding: 5px 10px;
+    }
+
+    .logo > img{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
 }

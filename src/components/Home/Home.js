@@ -27,27 +27,28 @@ export default function Home() {
                 <h1 className="languages"> Tech Stack <span> | </span></h1>
                 <div className="language-logos">
                     <div className='logo'>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png"
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/html-5--v1.png"
                              alt="html-5--v1"/>
                     </div>
                     <div className='logo'>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
                     </div>
                     <div className='logo'>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/000000/javascript--v1.png"
                              alt="javascript--v1"/>
                     </div>
                     <div className='logo'>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png"
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/react-native.png"
                              alt="react-native"/>
                     </div>
                     <div className='logo'>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
                     </div>
                     <div className='logo'>
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/000000/mongodb.png"
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/000000/mongodb.png"
                              alt="mongodb"/>
                     </div>
+
                 </div>
             </div>
         </div>
