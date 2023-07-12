@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Yantramanav:wght@500&display=swap');
-*{
+
+* {
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Oswald', sans-serif;
 }
@@ -142,67 +143,136 @@
 }
 
 
-
 .summary-about {
-    margin: 300px 0 ;
+    margin: 300px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
 }
 
-.summary-about-img > img{
+.summary-about-img > img {
     width: 350px;
     height: auto;
     border-radius: 1rem;
 }
 
-.memoji{
-    position: absolute;
-    background-color: white;
-    top: 1220px;
-    left: 620px;
-    display: flex;
-    width: 150px; /* Adjust the dimensions as per your requirements */
-    height: 150px;
-    border-radius: 50%; /* This creates the circle shape */
-    overflow: hidden; /* Clips the image to the container's shape */
-}
-
-.memoji > img {
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-}
-
-.summary-about-heading{
+.summary-about-heading {
     font-size: 18px;
     font-weight: 700;
     color: dodgerblue;
 }
 
-.summary-about-subheading{
+.summary-about-subheading {
     font-size: 20px;
     font-weight: 500;
     color: gray;
     margin: 0 0 5px 0;
 }
 
-.summary-about-paragraph{
+.summary-about-paragraph {
     font-size: 15px;
     font-weight: 500;
     color: black;
     width: 100%;
 }
 
-.portfolio-heading{
+.portfolio-heading {
     font-size: 18px;
     font-weight: 700;
     color: dodgerblue;
+    margin: 0 0 0 22.5%;
 }
 
-@media screen and (max-width: 1400px){
+.portfolio-subheading {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin: 0 0 5px 22.5%;
+}
+
+.project1 {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.project1-img > img {
+    width: 450px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.project1-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.project1-paragraph {
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+.used-languages {
+    display: flex;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lang{
+    font-size: 7px;
+    font-weight: 200;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mubarak-github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.mubarak-code{
+    font-size: 8px;
+    font-weight: 500;
+    color: gray;
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.mubarak-website{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mubarak-img{
+    width: 30px;
+    margin: 10px 0 0 0;
+    color: grey;
+}
+
+@media screen and (max-width: 1400px) {
     .languages {
         font-size: 20px;
         width: 20%;
@@ -249,7 +319,7 @@
         top: 0;
         left: 0;
         width: 20%;
-        height:100%;
+        height: 100%;
         background: black;
         color: white;
         display: flex;
@@ -261,7 +331,7 @@
         transform: translateY(-100vh);
     }
 
-    nav > li{
+    nav > li {
         font-size: 15px;
     }
 
@@ -269,7 +339,7 @@
         transform: none;
     }
 
-    .nav-close-btn{
+    .nav-close-btn {
         position: absolute;
         top: 1rem;
         right: 3.8rem;
@@ -323,7 +393,7 @@
         display: flex;
         width: 200px; /* Adjust the dimensions as per your requirements */
         height: 200px;
-        margin:0 auto -60px auto;
+        margin: 0 auto -60px auto;
         border-radius: 50%; /* This creates the circle shape */
         overflow: hidden; /* Clips the image to the container's shape */
     }
@@ -334,7 +404,7 @@
     }
 
     .tech-stack {
-        margin: 100px 0 7`0px 0;
+        margin: 100px 0 70px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -367,36 +437,36 @@
         padding: 5px 10px;
     }
 
-    .logo > img{
+    .logo > img {
         width: 20px;
         height: 20px;
         padding: 5px;
     }
 
     .summary-about {
-        margin: 30px 0 ;
+        margin: 30px 0;
         flex-direction: column;
     }
 
-    .summary-about-img > img{
+    .summary-about-img > img {
         width: 350px;
         height: auto;
         border-radius: 1rem;
     }
 
-    .summary-about-heading{
+    .summary-about-heading {
         text-align: center;
     }
 
-    .summary-about-subheading{
+    .summary-about-subheading {
         text-align: center;
     }
 
-    .summary-about-paragraph{
+    .summary-about-paragraph {
         text-align: center;
     }
 
-    .portfolio-heading{
+    .portfolio-heading {
         text-align: center;
     }
 

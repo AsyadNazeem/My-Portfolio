@@ -1,7 +1,8 @@
 import React from "react";
 import profile from '../images/profile.png'
-import aboutphoto from '../images/about.jpeg'
-import memoji from "../images/memoji.jpeg";
+import aboutPhoto from '../images/about.jpeg'
+import mubarak from '../images/mubarak.jpeg'
+
 
 export default function Home() {
     return (
@@ -54,7 +55,7 @@ export default function Home() {
             </div>
             <div className='summary-about'>
                 <div className="summary-about-img">
-                    <img src={aboutphoto} alt="computer photo"/>
+                    <img src={aboutPhoto} alt="computer photo"/>
                 </div>
                 <div>
                     <div className="summary-about-heading">
@@ -81,9 +82,57 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/*<div className="portfolio">*/}
-            {/*    <h1 className='portfolio-heading'>Portfolio</h1>*/}
-            {/*</div>*/}
+            <div className="portfolio">
+                <h1 className='portfolio-heading'>Portfolio</h1>
+                <h2 className='portfolio-subheading'>Here are a few projects I've worked on recently.</h2>
+                <div className="portfolio-projects">
+                    <div className="project1">
+                        <div className="project1-img">
+                            <img src={mubarak} alt="mubarak web"/>
+                        </div>
+                        <div className="project1-details">
+                            <h1 className="project1-heading">Mubarak Enterprises</h1>
+                            <p className="project1-paragraph">A website for a local business, Mubarak Enterprises. <br/>
+                                Built using React.js, Node.js, Express.js, MongoDB, and Bootstrap.
+                            </p>
+                            <div className="used-languages">
+                                <div className="lang">
+                                    <h1>React Js</h1>
+                                </div>
+                                <div className="lang">
+                                    <h1>Node Js</h1>
+                                </div>
+                                <div className="lang">
+                                    <h1>Express Js</h1>
+                                </div>
+                                <div className="lang">
+                                    <h1>MongoDB</h1>
+                                </div>
+                            </div>
+                            <div className="links">
+                                <div className="mubarak-github">
+                                    <div className="mubarak-code">
+                                        <h1>Code</h1>
+                                    </div>
+                                    <div>
+                                        <img className='mubarak-img'
+                                             src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+                                    </div>
+                                </div>
+                                <div className="mubarak-website">
+                                    <div className="mubarak-code">
+                                        <h1>Live Demo</h1>
+                                    </div>
+                                    <div>
+                                        <img className='mubarak-img'
+                                             src="https://img.icons8.com/ios-filled/50/domain.png" alt="website"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
