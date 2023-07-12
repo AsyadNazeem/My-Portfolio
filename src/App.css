@@ -11,7 +11,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 0 30px;
+    padding: -20px;
 }
 
 .Navbar li {
@@ -19,7 +19,7 @@
     padding: 17.5px;
     text-align: right;
     justify-content: flex-end;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .Navbar li:hover {
@@ -32,13 +32,25 @@
     font-weight: 700;
 }
 
-.top{
+.nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #111111;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.3rem;
+}
+
+.top {
     display: flex;
 
 }
 
 .Home {
-    margin: 250px 375px 0 375px;
+    margin: 180px 375px 0 375px;
 }
 
 .heading {
@@ -59,7 +71,7 @@
     color: gray;
 }
 
-.social-links{
+.social-links {
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -88,31 +100,100 @@
     height: auto;
 }
 
-.tech-stack{
+.tech-stack {
     margin: 150px 0 0 0;
     display: flex;
     text-align: center;
 }
 
-.languages{
+.languages {
     font-size: 20px;
     width: 30%;
 }
 
-.languages span{
+.languages span {
     margin-left: 60px;
     font-size: 20px;
     height: 60px;
     font-weight: 300;
 }
 
-.language-logos{
+.language-logos {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
 
-.logo{
+.logo {
     width: 30px;
     padding: 0 40px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .Navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+    }
+
+    .navbar-header {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .Navbar li {
+        list-style: none;
+        padding: 17.5px;
+        text-align: right;
+        justify-content: flex-end;
+        font-weight: 600;
+    }
+
+    .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height:100%;
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        gap: 1.5rem;
+        transform: translateY(-100vh);
+    }
+
+    nav > li{
+        font-size: 15px;
+    }
+
+    .responsive_nav {
+        transform: none;
+    }
+
+    .nav-close-btn{
+        position: absolute;
+        top: 1rem;
+        right: 3.8rem;
+        color: white;
+    }
+
 }
