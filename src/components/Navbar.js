@@ -13,7 +13,7 @@ export default function Navbar() {
         <div>
             <ul className="Navbar">
                 <div>
-                    <h1 className="navbar-header">dev.Navbar</h1>
+                    <h1 className="navbar-header">dev.Asyad</h1>
                 </div>
                 <nav ref={navRef} activeClassName="active" className="nav-links">
                     <li className="Navbar-link">Home</li>
