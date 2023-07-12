@@ -1,4 +1,5 @@
 import React from "react";
+import profile from '../images/profile.png'
 
 export default function Home() {
     return (
@@ -6,9 +7,8 @@ export default function Home() {
             <div className="top">
                 <div>
                     <h1 className='heading'>Full Stack React <br/> Developer 👋🏻</h1>
-                    <h4 className='sub-heading'>Hi, I'm Asyad Nazeem. A passionate Front-End <br/> React Developer based
-                        in
-                        Colombo, Sri Lanka 📍</h4>
+                    <h4 className='sub-heading'>Hi, I'm Asyad Nazeem. A passionate Full Stack React Developer based
+                        <br/>  in Colombo, Sri Lanka 📍</h4>
                     <div className='social-links'>
                         <div className="linkedin">
                             <img className="linkedin" src="https://img.icons8.com/ios-filled/50/linkedin.png"
@@ -20,7 +20,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='images'>
-                    <img className='image' src="https://i.ibb.co/7XQGp1W/IMG-20210718-123751.jpg" alt="profile"/>
+                    <img className='image' src={profile} alt="profile"/>
                 </div>
             </div>
             <div className="tech-stack">
@@ -48,7 +48,6 @@ export default function Home() {
                         <img width="35" height="35" src="https://img.icons8.com/color/48/000000/mongodb.png"
                              alt="mongodb"/>
                     </div>
-
                 </div>
             </div>
         </div>
