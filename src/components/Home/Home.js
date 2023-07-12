@@ -1,6 +1,7 @@
 import React from "react";
 import profile from '../images/profile.png'
 import aboutphoto from '../images/about.jpeg'
+import memoji from "../images/memoji.jpeg";
 
 export default function Home() {
     return (
@@ -72,12 +73,17 @@ export default function Home() {
                             Passionate about front-end development, I create visually <br/> appealing websites using
                             HTML and
                             CSS. I bring interactivity and dynamic functionality <br/> to applications using JavaScript,
-                            with a focus on React.js for building robust front-end <br/> solutions. <br/> If you're looking for a
-                            skilled full-stack React developer to bring your ideas to life, <br/> I'm ready to collaborate and
+                            with a focus on React.js for building robust front-end <br/> solutions. <br/> If you're
+                            looking for a
+                            skilled full-stack React developer to bring your ideas to life, <br/> I'm ready to
+                            collaborate and
                             take on new challenges.</p>
                     </div>
                 </div>
             </div>
+            {/*<div className="portfolio">*/}
+            {/*    <h1 className='portfolio-heading'>Portfolio</h1>*/}
+            {/*</div>*/}
         </div>
     )
 }

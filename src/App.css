@@ -157,6 +157,25 @@
     border-radius: 1rem;
 }
 
+.memoji{
+    position: absolute;
+    background-color: white;
+    top: 1220px;
+    left: 620px;
+    display: flex;
+    width: 150px; /* Adjust the dimensions as per your requirements */
+    height: 150px;
+    border-radius: 50%; /* This creates the circle shape */
+    overflow: hidden; /* Clips the image to the container's shape */
+}
+
+.memoji > img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
 .summary-about-heading{
     font-size: 18px;
     font-weight: 700;
@@ -176,6 +195,13 @@
     color: black;
     width: 100%;
 }
+
+.portfolio-heading{
+    font-size: 18px;
+    font-weight: 700;
+    color: dodgerblue;
+}
+
 @media screen and (max-width: 1400px){
     .languages {
         font-size: 20px;
@@ -256,13 +282,13 @@
     }
 
     .Home {
-        margin: 150px 25px;
+        margin: 50px 25px;
     }
 
     .heading {
         font-size: 50px;
         font-weight: 700;
-        margin: 0 0 0 0;
+        margin: 0 0 40px 0;
         padding: 0;
         text-align: center;
         color: #111;
@@ -281,7 +307,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin: 0 0 50px 0;
+        margin: 0 0 80px 0;
     }
 
     .linkedin {
@@ -297,7 +323,7 @@
         display: flex;
         width: 200px; /* Adjust the dimensions as per your requirements */
         height: 200px;
-        margin: auto;
+        margin:0 auto -60px auto;
         border-radius: 50%; /* This creates the circle shape */
         overflow: hidden; /* Clips the image to the container's shape */
     }
@@ -308,7 +334,7 @@
     }
 
     .tech-stack {
-        /*margin: 100px 0 0 0;*/
+        margin: 100px 0 7`0px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -346,4 +372,32 @@
         height: 20px;
         padding: 5px;
     }
+
+    .summary-about {
+        margin: 30px 0 ;
+        flex-direction: column;
+    }
+
+    .summary-about-img > img{
+        width: 350px;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .summary-about-heading{
+        text-align: center;
+    }
+
+    .summary-about-subheading{
+        text-align: center;
+    }
+
+    .summary-about-paragraph{
+        text-align: center;
+    }
+
+    .portfolio-heading{
+        text-align: center;
+    }
+
 }
