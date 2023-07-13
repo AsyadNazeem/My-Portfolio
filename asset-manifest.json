@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.2ffb73d4.css",
+    "main.js": "/my-portfolio/static/js/main.47e33c95.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/travel Website.png": "/my-portfolio/static/media/travel Website.9f385f4295f848c1392c.png",
+    "static/media/profile.png": "/my-portfolio/static/media/profile.a8b1284c08bfee4f4274.png",
+    "static/media/mubarak.jpeg": "/my-portfolio/static/media/mubarak.88bd252b7c6d44112273.jpeg",
+    "static/media/about.jpeg": "/my-portfolio/static/media/about.45cd62c2d52c6da0ad0f.jpeg",
+    "index.html": "/my-portfolio/index.html",
+    "main.2ffb73d4.css.map": "/my-portfolio/static/css/main.2ffb73d4.css.map",
+    "main.47e33c95.js.map": "/my-portfolio/static/js/main.47e33c95.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ffb73d4.css",
+    "static/js/main.47e33c95.js"
+  ]
+}
