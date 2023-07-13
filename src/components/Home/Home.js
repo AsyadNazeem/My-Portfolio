@@ -72,7 +72,7 @@ export default function Home() {
                             Lanka.</h4>
                     </div>
                     <div className="summary-about-paragraph">
-                        <p className="summary-about-paragraph">II'm a full-stack React developer based in Colombo, Sri
+                        <p className="summary-about-paragraph">I'm a full-stack React developer based in Colombo, Sri
                             Lanka. With expertise in HTML, <br/> CSS, JavaScript, React.js, Node.js, and MongoDB, I
                             specialize
                             in building modern and <br/> scalable web applications.
