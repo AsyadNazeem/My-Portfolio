@@ -2,6 +2,7 @@ import React from "react";
 import profile from '../images/profile.png'
 import aboutPhoto from '../images/about.jpeg'
 import mubarak from '../images/mubarak.jpeg'
+import travel from '../images/travel Website.png'
 
 
 export default function Home() {
@@ -92,8 +93,8 @@ export default function Home() {
                         </div>
                         <div className="project1-details">
                             <h1 className="project1-heading">Mubarak Enterprises</h1>
-                            <p className="project1-paragraph">A website for a local business, Mubarak Enterprises. <br/>
-                                Built using React.js, Node.js, Express.js, MongoDB, and Bootstrap.
+                            <p className="project1-paragraph">A website for a local business, Mubarak <br/> Enterprises.
+                                Built using React.js, Node.js, Express.js, <br/> MongoDB, and Bootstrap.
                             </p>
                             <div className="used-languages">
                                 <div className="lang">
@@ -129,6 +130,80 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="project2">
+                        <div className="project2-details">
+                            <h1 className="project2-heading">Travel Website</h1>
+                            <p className="project2-paragraph">A website for a local business, Mubarak <br/> Enterprises.
+                                Built using React.js, Node.js, <br/> Express.js, MongoDB, and Bootstrap.
+                            </p>
+                            <div className="used-languages">
+                                <div className="lang">
+                                    <h1>HTML</h1>
+                                </div>
+                                <div className="lang">
+                                    <h1>CSS</h1>
+                                </div>
+                            </div>
+                            <div className="links">
+                                <div className="mubarak-github">
+                                    <div className="mubarak-code">
+                                        <h1>Code</h1>
+                                    </div>
+                                    <div>
+                                        <img className='mubarak-img'
+                                             src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+                                    </div>
+                                </div>
+                                <div className="mubarak-website">
+                                    <div className="mubarak-code">
+                                        <h1>Live Demo</h1>
+                                    </div>
+                                    <div>
+                                        <img className='mubarak-img'
+                                             src="https://img.icons8.com/ios-filled/50/domain.png" alt="website"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="project1-img">
+                            <img src={travel} alt="travel web"/>
+                        </div>
+                    </div>
+                    <div className="contacts">
+                        <h1 className='contacts-heading'>Contact</h1>
+                        <h2 className='contacts-subheading'>Want to collaborate on a project or just want to say
+                            hi?</h2>
+                        <div className="contacts-details">
+                            <div className='contact-location'>
+                                <img src="https://img.icons8.com/glyph-neue/64/000000/map-marker.png" alt="map-marker"/>
+                                <div>
+                                    <h1>Location</h1>
+                                    <p>Colombo, Sri Lanka</p>
+                                </div>
+                            </div>
+                            <div className='contact-mail'>
+                                <img
+                                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/external-mail-coding-kiranshastry-solid-kiranshastry.png"
+                                    alt="external-mail-coding-kiranshastry-solid-kiranshastry"/>
+                                <div>
+                                    <h1>Email</h1>
+                                    <p>asyadnazeem@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="footer">
+                        <div className="copy-write-text">
+                            <h1>Copyright © 2023. All rights are reserved</h1>
+                        </div>
+                        <div className='footer-ico'>
+                            <div className="footer-linkedin">
+                                <img src="https://img.icons8.com/sf-black/64/linkedin.png" alt="linkedin"/>
+                            </div>
+                            <div className="footer-github">
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github"/>                            </div>
                         </div>
                     </div>
                 </div>
