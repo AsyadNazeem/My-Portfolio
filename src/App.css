@@ -12,6 +12,9 @@
 
 .Navbar {
     display: flex;
+    background-color: white;
+    margin-top: -1px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 30px 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar-header {
@@ -438,7 +441,6 @@
 
 @media screen and (max-width: 700px) {
     .navbar{
-        margin-top: -25px;
         margin-bottom: 20px;
     }
 
@@ -447,7 +449,7 @@
         justify-content: space-between;
         align-items: center;
         /*padding: 0 10px;*/
-        padding: 0;
+        padding: 15px;
     }
 
     .navbar-header {
@@ -460,15 +462,21 @@
         justify-content: center;
         align-content: center;
         width: 100%;
-        padding: 0 20px;
+        padding-top: 40px;
+        /*padding: 0 20px;*/
     }
 
     .Navbar li {
         list-style: none;
-        padding: 17.5px;
-        text-align: right;
-        justify-content: flex-end;
+        padding: 20px;
+        text-align: center;
         font-weight: 600;
+        font-size: 15px;
+    }
+
+    .Navbar li :hover {
+        background-color: #f2f2f2;
+        border-radius: 5px;
     }
 
     .nav-btn {
@@ -481,7 +489,7 @@
         top: 0;
         left: 0;
         width: 20%;
-        height: 100%;
+        height: 30vh;
         background: black;
         color: white;
         display: flex;
@@ -489,12 +497,8 @@
         justify-content: center;
         align-items: center;
         transition: 1s;
-        gap: 1.5rem;
+        gap: -15px;
         transform: translateY(-100vh);
-    }
-
-    nav > li {
-        font-size: 15px;
     }
 
     .responsive_nav {
@@ -504,7 +508,7 @@
     .nav-close-btn {
         position: absolute;
         top: 1rem;
-        right: 3.8rem;
+        right: 1rem;
         color: white;
     }
 
