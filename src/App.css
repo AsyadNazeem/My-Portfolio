@@ -14,8 +14,7 @@
     display: flex;
     background-color: white;
     margin-top: -1px;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 30px 25px 0 rgba(0, 0, 0, 0.1);
-}
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
 
 .navbar-header {
     font-size: 20px;
