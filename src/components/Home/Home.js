@@ -10,7 +10,7 @@ export default function Home() {
         <div className='Home'>
             <div className="top">
                 <div>
-                    <h1 className='heading'>Full Stack React <br/> Developer 👋🏻</h1>
+                    <h1 className='heading'>Full Stack React <br/> Developer <br/> 👋🏻</h1>
                     <h4 className='sub-heading'>Hi, I'm Asyad Nazeem. A passionate Full Stack React Developer based
                         <br/> in Colombo, Sri Lanka 📍</h4>
                     <div className='social-links'>
@@ -198,13 +198,13 @@ export default function Home() {
                         <div className="copy-write-text">
                             <h1>Copyright © 2023. All rights are reserved</h1>
                         </div>
-                        <div className='footer-ico'>
-                            <div className="footer-linkedin">
-                                <img src="https://img.icons8.com/sf-black/64/linkedin.png" alt="linkedin"/>
-                            </div>
-                            <div className="footer-github">
-                                <img src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github"/>                            </div>
-                        </div>
+                        {/*<div className='footer-ico'>*/}
+                        {/*    <div className="footer-linkedin">*/}
+                        {/*        <img src="https://img.icons8.com/sf-black/64/linkedin.png" alt="linkedin"/>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="footer-github">*/}
+                        {/*        <img src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github"/>                            </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>
