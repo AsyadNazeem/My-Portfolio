@@ -3,11 +3,15 @@ import profile from '../images/profile.png'
 import aboutPhoto from '../images/about.jpeg'
 import mubarak from '../images/mubarak.jpeg'
 import travel from '../images/travel Website.png'
+import Navbar from "../Navbar";
 
 
 export default function Home() {
     return (
         <div className='Home'>
+            <div className='navbar'>
+                <Navbar/>
+            </div>
             <div className="top">
                 <div>
                     <h1 className='heading'>Full Stack React <br/> Developer <br/> 👋🏻</h1>
