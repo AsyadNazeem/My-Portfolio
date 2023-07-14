@@ -227,6 +227,13 @@ export default function Home() {
                                             <p>asyadnazeem@gmail.com</p>
                                         </div>
                                     </div>
+                                    <div className='contact-phone'>
+                                        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
+                                        <div>
+                                            <h1>Phone</h1>
+                                            <p>+94 76 809 4431</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
