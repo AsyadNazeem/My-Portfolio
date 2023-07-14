@@ -209,20 +209,20 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="footer">
-                            <div className="copy-write-text">
-                                <h1>Copyright © 2023. All rights are reserved</h1>
-                            </div>
-                            {/*<div className='footer-ico'>*/}
-                            {/*    <div className="footer-linkedin">*/}
-                            {/*        <img src="https://img.icons8.com/sf-black/64/linkedin.png" alt="linkedin"/>*/}
-                            {/*    </div>*/}
-                            {/*    <div className="footer-github">*/}
-                            {/*        <img src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github"/>                            </div>*/}
-                            {/*</div>*/}
-                        </div>
                     </div>
                 </div>
+            </div>
+            <div className="footer">
+                <div className="copy-write-text">
+                    <h1>Copyright © 2023. All rights are reserved</h1>
+                </div>
+                {/*<div className='footer-ico'>*/}
+                {/*    <div className="footer-linkedin">*/}
+                {/*        <img src="https://img.icons8.com/sf-black/64/linkedin.png" alt="linkedin"/>*/}
+                {/*    </div>*/}
+                {/*    <div className="footer-github">*/}
+                {/*        <img src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github"/>                            </div>*/}
+                {/*</div>*/}
             </div>
         </div>
     )

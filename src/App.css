@@ -328,15 +328,19 @@
 
 .contacts-details {
     display: flex;
-    margin-left: 22.5%;
-    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 .contact-location {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 100px;
+    border-radius: 1rem;
 }
 
 .contact-location img {
@@ -344,8 +348,6 @@
     margin: 10px 0 0 0;
     color: dodgerblue;
 }
-
-
 
 .contact-location h1 {
     font-size: 18px;
@@ -368,7 +370,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 80px;
+    border-radius: 1rem;
 }
 
 .contact-mail img {
