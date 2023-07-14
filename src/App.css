@@ -6,9 +6,9 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.navbar{
-    margin-bottom: 180px;
-}
+/*.navbar{*/
+/*    margin-bottom: 180px;*/
+/*}*/
 
 .Navbar {
     display: flex;
@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 140px 0 50px 0;
 }
 
 .Home {
@@ -150,7 +151,8 @@
 
 
 .summary-about {
-    margin: 300px 0;
+    margin-top: 20px;
+    padding: 200px 0 250px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,9 +446,9 @@
 }
 
 @media screen and (max-width: 700px) {
-    .navbar{
-        margin-bottom: 20px;
-    }
+    /*.navbar{*/
+    /*    margin-bottom: 20px;*/
+    /*}*/
 
     .Navbar {
         display: flex;
@@ -519,10 +521,11 @@
     .top {
         display: flex;
         flex-direction: column;
+        padding: 60px 15px 0 15px ;
     }
 
     .Home {
-        margin: 50px 25px;
+        margin: unset;
     }
 
     .heading {
@@ -574,7 +577,7 @@
     }
 
     .tech-stack {
-        margin: 100px 0 70px 0;
+        margin: 110px 0 70px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -616,6 +619,7 @@
     .summary-about {
         margin: 30px 0;
         flex-direction: column;
+        padding: 30px 25px 100px 25px;
     }
 
     .summary-about-img > img {
@@ -634,6 +638,10 @@
 
     .summary-about-paragraph {
         text-align: center;
+    }
+
+    .portfolio{
+        padding: 20px 20px;
     }
 
     .portfolio-heading {
