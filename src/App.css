@@ -217,25 +217,34 @@
     gap: 70px;
 }
 
-.project1-img > img {
+.project-img > img {
     width: 500px;
     height: auto;
     border-radius: 1rem;
 }
 
-.project1-heading {
+.project-heading {
     font-size: 18px;
     font-weight: 700;
     color: var(--secondary-color);
     text-align: center;
 }
 
-.project1-paragraph {
+.project-paragraph {
     font-size: 15px;
     font-weight: 500;
     color: var(--subheading-color);
     width: 100%;
     text-align: center;
+}
+
+.project2 {
+    margin: 150px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 70px;
 }
 
 .used-languages {
@@ -267,7 +276,6 @@
     gap: 20px;
 }
 
-
 .mubarak-code {
     font-size: 8px;
     font-weight: 500;
@@ -289,36 +297,6 @@
     margin: 10px 0 0 0;
     color: var(--subheading-color);
 }
-
-.project2 {
-    margin: 150px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-
-.project2-img > img {
-    width: 550px;
-    height: auto;
-    border-radius: 1rem;
-}
-
-.project2-heading {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--secondary-color);
-    text-align: center;
-}
-
-.project2-paragraph {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--subheading-color);
-    width: 100%;
-    text-align: center;
-}
-
 
 .contacts {
     margin: 200px 0 100px 0;
@@ -562,6 +540,7 @@
 
     .Home {
         margin: unset;
+        padding-bottom: 20px;
     }
 
     .heading {
@@ -690,24 +669,19 @@
         margin: unset;
     }
 
-    .project1 {
+    .project1{
         flex-direction: column;
     }
 
     .project2 {
         margin: 50px 0 0 0;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
-    .project1-img > img {
+    .project-img > img {
         width: 350px;
         height: auto;
         margin-bottom: -50px;
-    }
-
-    .project2-img > img {
-        width: 350px;
-        height: auto;
     }
 
     .contacts {
@@ -720,8 +694,9 @@
     }
 
     .contacts-subheading {
-        margin: 10px 0;
+        margin: auto;
         text-align: center;
+        width: 80%;
     }
 
     .contacts-details {
