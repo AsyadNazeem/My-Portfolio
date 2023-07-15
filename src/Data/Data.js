@@ -15,7 +15,8 @@ export const projects = [
         },
         links1: {
                 code: "Code",
-                ico: "https://img.icons8.com/ios-filled/50/github.png"
+                ico: "https://img.icons8.com/ios-filled/50/github.png",
+                url: "https://github.com/AsyadNazeem/Mubarak-enterprises"
             },
         links2: {
                 demo: "Demo",
@@ -35,7 +36,8 @@ export const projects = [
         },
         links1: {
             code: "Code",
-            ico: "https://img.icons8.com/ios-filled/50/github.png"
+            ico: "https://img.icons8.com/ios-filled/50/github.png",
+            url:"https://github.com/AsyadNazeem/Travel-webpage-home-page-design"
         },
         links2: {
             demo: "Demo",

@@ -38,7 +38,9 @@ export default function Projects(prop) {
                                 <h1>{prop.item.links1.code}</h1>
                             </div>
                             <div>
-                                <img className='mubarak-img' src={prop.item.links1.ico} alt="github"/>
+                                <a href={prop.item.links1.url} target="_blank" rel="noreferrer">
+                                    <img className='mubarak-img' src={prop.item.links1.ico} alt="github"/>
+                                </a>
                             </div>
                         </div>
                         <div className="mubarak-website">

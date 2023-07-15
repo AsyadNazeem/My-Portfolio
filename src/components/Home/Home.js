@@ -11,7 +11,7 @@ import Projects from "../Projects";
 
 const project = projects.map(item => {
     const descriptionLines = item.description.split('\n').map((line, index) => (
-        <p key={index} style={{ lineHeight: '10px' }} >{line}</p>
+        <p key={index} style={{lineHeight: '10px'}}>{line}</p>
     ));
     return (
         <Projects
@@ -42,13 +42,18 @@ export default function Home(item) {
                                 <br/> in Colombo, Sri Lanka 📍</h4>
                             <div className='social-links'>
                                 <div className="linkedin">
-                                    <img className="linkedin"
-                                         src="https://img.icons8.com/ios-filled/50/linkedin.png"
-                                         alt="linkedin"/>
+                                    <a href="https://linkedin.com/in/asyad-nazeem" target="_blank"
+                                       rel="noopener noreferrer">
+                                        <img className="linkedin"
+                                             src="https://img.icons8.com/ios-filled/50/linkedin.png"
+                                             alt="linkedin"/>
+                                    </a>
                                 </div>
                                 <div className="github">
-                                    <img className='github' src="https://img.icons8.com/ios-filled/50/github.png"
-                                         alt="github"/>
+                                    <a href="https://github.com/AsyadNazeem" target="_blank" rel="noopener noreferrer">
+                                        <img className='github' src="https://img.icons8.com/ios-filled/50/github.png"
+                                             alt="github"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -177,10 +182,14 @@ export default function Home(item) {
                 </div>
                 <div className='footer-ico'>
                     <div className="footer-linkedin">
-                        <img src={linkedin} alt="linkedin"/>
+                        <a href="https://linkedin.com/in/asyad-nazeem" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} alt="linkedin"/>
+                        </a>
                     </div>
                     <div className="footer-github">
-                        <img src={github} alt="github"/>
+                        <a href="https://github.com/AsyadNazeem" target="_blank" rel="noopener noreferrer">
+                            <img src={github} alt="github"/>
+                        </a>
                     </div>
                 </div>
             </div>
