@@ -108,27 +108,17 @@ export default function Home(item) {
                                     Colombo, Sri
                                     Lanka.</h4>
                             </div>
-                            <div className="summary-about-paragraph">
+                            <div className="summary-about-paragraph1">
                                 <p className="summary-about-paragraph">I'm a full-stack React developer based in
-                                    Colombo,
-                                    Sri
-                                    Lanka. With expertise in HTML, <br/> CSS, JavaScript, React.js, Node.js, and
-                                    MongoDB, I
-                                    specialize
-                                    in building modern and <br/> scalable web applications.
-                                    Passionate about front-end development, I create visually <br/> appealing
-                                    websites
-                                    using
-                                    HTML and
-                                    CSS. I bring interactivity and dynamic functionality <br/> to applications using
-                                    JavaScript,
-                                    with a focus on React.js for building robust front-end <br/> solutions. <br/> If
-                                    you're
-                                    looking for a
-                                    skilled full-stack React developer to bring your ideas to life, <br/> I'm ready
-                                    to
-                                    collaborate and
-                                    take on new challenges.</p>
+                                    Colombo, Sri Lanka. With expertise in HTML, <br/> CSS, JavaScript, React.js,
+                                    Node.js, and MongoDB, I specialize in building modern and <br/> scalable web
+                                    applications. Passionate about front-end development, I create visually
+                                    <br/> appealing websites using HTML and CSS. I bring interactivity and dynamic
+                                    functionality <br/> to applications using JavaScript, with a focus on React.js for
+                                    building robust front-end <br/> solutions. <br/> If you're looking for a skilled
+                                    full-stack React developer to bring your ideas to life, <br/> I'm ready to
+                                    collaborate and take on new challenges.
+                                </p>
                             </div>
                         </div>
                     </div>

@@ -192,7 +192,7 @@
     font-size: 15px;
     font-weight: 500;
     color: var(--paragraph-color);
-    width: 100%;
+    max-width: 100%;
 }
 
 .portfolio-heading {
@@ -652,6 +652,8 @@
     }
 
     .summary-about-paragraph {
+        margin: auto;
+        width: 65%;
         text-align: center;
     }
 
