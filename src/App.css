@@ -652,8 +652,8 @@
     }
 
     .summary-about-paragraph {
-        margin: auto;
-        width: 65%;
+        margin: 30px auto 0 auto;
+        width: 90%;
         text-align: center;
     }
 
