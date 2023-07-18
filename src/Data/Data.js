@@ -16,7 +16,7 @@ export const projects = [
         links1: {
                 code: "Code",
                 ico: "https://img.icons8.com/ios-filled/50/github.png",
-                url: "https://github.com/AsyadNazeem/Mubarak-enterprises"
+                url: "https://github.com/AsyadNazeem/Mubarak-Products"
             },
         links2: {
                 demo: "Demo",

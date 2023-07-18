@@ -146,6 +146,13 @@ export default function Home(item) {
                                     <p>Colombo, Sri Lanka</p>
                                 </div>
                             </div>
+                            <div className='contact-phone'>
+                                <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
+                                <div>
+                                    <h1>Phone</h1>
+                                    <p>+94 76 809 4431</p>
+                                </div>
+                            </div>
                             <div className='contact-mail'>
                                 <img
                                     src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/external-mail-coding-kiranshastry-solid-kiranshastry.png"
@@ -153,13 +160,6 @@ export default function Home(item) {
                                 <div>
                                     <h1>Email</h1>
                                     <p>asyadnazeem@gmail.com</p>
-                                </div>
-                            </div>
-                            <div className='contact-phone'>
-                                <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
-                                <div>
-                                    <h1>Phone</h1>
-                                    <p>+94 76 809 4431</p>
                                 </div>
                             </div>
                         </div>
