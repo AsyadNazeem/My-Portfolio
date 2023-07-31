@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Yantramanav:wght@500&display=swap');
 
@@ -239,7 +240,7 @@
 }
 
 .project2 {
-    margin: 150px 0 0 0;
+    margin: 150px 0 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +300,7 @@
 }
 
 .contacts {
-    margin: 200px 0 100px 0;
+    margin: 150px 0 100px 0;
 }
 
 .contacts-heading {
@@ -762,3 +763,4 @@
     }
 
 }
+
