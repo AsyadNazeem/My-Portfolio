@@ -317,7 +317,15 @@
     margin: 0 0 50px 22.5%;
 }
 
-.contacts-details {
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.row1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,6 +397,33 @@
     width: 100%;
     text-align: left;
     margin: 20px 0 0 0;
+}
+
+.contact-Resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    padding: 2% 30.2%;
+    border-radius: 1rem;
+    gap: 30px;
+}
+
+.resume-btn{
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+    gap: 20px;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 1rem;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .footer {
@@ -702,7 +737,7 @@
         width: 80%;
     }
 
-    .contacts-details {
+    .row1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -738,12 +773,45 @@
         margin: 0 0 -70px 0;
     }
 
+    .contact-Resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: var(--box-shadow);
+        padding: 5% 3.2%;
+        border-radius: 1rem;
+        gap: 30px;
+    }
+
+    .resume-btn{
+        /*display: flex;*/
+        /*justify-content: flex-start;*/
+        /*align-items: flex-start;*/
+        gap: 20px;
+        background-color: var(--secondary-color);
+        padding: 10px 25px;
+        border-radius: 1rem;
+        color: var(--primary-color);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .contact-Resume > h1 {
+        font-size: 15px;
+        font-weight: 500;
+        width: 30%;
+    }
+
     .footer {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 40px;
-        margin: 40px 0 0 0;
+        margin: unset;
         background-color: var(--secondary-color);
     }
 

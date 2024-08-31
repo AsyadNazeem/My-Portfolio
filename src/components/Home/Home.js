@@ -1,6 +1,7 @@
 import React from "react";
 import profile from '../images/profile.png'
 import aboutPhoto from '../images/about.jpeg'
+import Resume from '../images/AsyadNazeemResume.pdf'
 // import mubarak from '../images/mubarak.jpeg'
 import Navbar from "../Navbar";
 import Headroom from "react-headroom";
@@ -22,6 +23,10 @@ const project = projects.map(item => {
     )
 
 })
+
+function btnclick() {
+    window.open(Resume)
+}
 
 export default function Home(item) {
     return (
@@ -102,8 +107,7 @@ export default function Home(item) {
                                 <h1 className="summary-about-heading">About Me</h1>
                             </div>
                             <div className="summary-about-subheading">
-                                <h4 className="summary-about-subheading">A dedicated Full Stack React
-                                    Developer <br/> based
+                                <h4 className="summary-about-subheading">A dedicated Full Stack Web Developer <br/> based
                                     in
                                     Colombo, Sri
                                     Lanka.</h4>
@@ -137,31 +141,37 @@ export default function Home(item) {
                         <h1 className='contacts-heading'>Contact</h1>
                         <h2 className='contacts-subheading'>Want to collaborate on a project or just want to
                             say hi?</h2>
-                        <div className="contacts-details">
-                            <div className='contact-location'>
-                                <img src="https://img.icons8.com/glyph-neue/64/000000/map-marker.png"
-                                     alt="map-marker"/>
-                                <div>
-                                    <h1>Location</h1>
-                                    <p>Colombo, Sri Lanka</p>
+                        <div className="contact-details">
+                            <div className="row1">
+                                <div className='contact-location'>
+                                    <img src="https://img.icons8.com/glyph-neue/64/000000/map-marker.png"
+                                         alt="map-marker"/>
+                                    <div>
+                                        <h1>Location</h1>
+                                        <p>Colombo, Sri Lanka</p>
+                                    </div>
+                                </div>
+                                <div className='contact-phone'>
+                                    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
+                                    <div>
+                                        <h1>Phone</h1>
+                                        <p>+94 76 809 4431</p>
+                                    </div>
+                                </div>
+                                <div className='contact-mail'>
+                                    <img
+                                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/external-mail-coding-kiranshastry-solid-kiranshastry.png"
+                                        alt="external-mail-coding-kiranshastry-solid-kiranshastry"/>
+                                    <div>
+                                        <h1>Email</h1>
+                                        <p>asyadnazeem@gmail.com</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='contact-phone'>
-                                <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
-                                <div>
-                                    <h1>Phone</h1>
-                                    <p>+94 76 809 4431</p>
-                                </div>
-                            </div>
-                            <div className='contact-mail'>
-                                <img
-                                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/external-mail-coding-kiranshastry-solid-kiranshastry.png"
-                                    alt="external-mail-coding-kiranshastry-solid-kiranshastry"/>
-                                <div>
-                                    <h1>Email</h1>
-                                    <p>asyadnazeem@gmail.com</p>
-                                </div>
-                            </div>
+                            {/*<div className="contact-Resume">*/}
+                            {/*    <button className='resume-btn' onClick={btnclick}>Resume...</button>*/}
+                            {/*    <h1>Want to Look at my Resume</h1>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </section>
