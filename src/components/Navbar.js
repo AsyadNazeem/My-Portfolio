@@ -39,16 +39,16 @@ export default function Navbar() {
                         duration={500}>
                         <li className="Navbar-link">About</li>
                     </Link>
-                    {/*<Link*/}
-                    {/*    className="Navbar-link"*/}
-                    {/*    activeClass="active"*/}
-                    {/*    to="education"*/}
-                    {/*    spy={true}*/}
-                    {/*    smooth={true}*/}
-                    {/*    offset={-70}*/}
-                    {/*    duration={500}>*/}
-                    {/*    <li className="Navbar-link">Education</li>*/}
-                    {/*</Link>*/}
+                    <Link
+                        className="Navbar-link"
+                        activeClass="active"
+                        to="education"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        <li className="Navbar-link">Education</li>
+                    </Link>
                     <Link
                         className="Navbar-link"
                         activeClass="active"
