@@ -37,7 +37,7 @@ export const projects = [
         links1: {
             code: "Code",
             ico: "https://img.icons8.com/ios-filled/50/github.png",
-            url:"https://github.com/AsyadNazeem/Travel-webpage-home-page-design"
+            url: "https://github.com/AsyadNazeem/Travel-webpage-home-page-design"
         },
         links2: {
             demo: "Demo",
@@ -60,11 +60,42 @@ export const projects = [
         links1: {
             code: "Code",
             ico: "https://img.icons8.com/ios-filled/50/github.png",
-            url:"https://github.com/AsyadNazeem/ERP-project"
+            url: "https://github.com/AsyadNazeem/ERP-project"
         },
         links2: {
             demo: "Demo",
             ico: "https://img.icons8.com/ios-filled/50/domain.png"
         }
     },
+]
+
+export const educationData = [
+    {
+        id:1,
+        course: "BSc Hons Software Engineering",
+        campus: "Cardiff Metropolitan University",
+        year: "May 2023 - Reading",
+        description : {
+            des1 : "Completed the Higher Diploma in Software Engineering and Computing in November 2022 \n" +
+                "graduated in February 2023 and Started the final year in May 2023.",
+            des2 : "Developing dynamic and efficient web applications using HTML, CSS, PHP, JavaScript, and SQL. \n" +
+                "Focused on full-stack development, including front-end design, server-side scripting, and database \n" +
+                "management.",
+            des3 :"Expecting to Graduate by 2024 November."
+        }
+    },
+    {
+        id:2,
+        course: "Higher National Diploma in Software Engineering and Computing",
+        campus: "Cardiff Metropolitan University",
+        year: "May 2023 - Reading",
+        description : {
+            des1 : "Completed the Higher Diploma in Software Engineering and Computing in November 2022 \n" +
+                "graduated in February 2023 and Started the final year in May 2023.",
+            des2 : "Developing dynamic and efficient web applications using HTML, CSS, PHP, JavaScript, and SQL. \n" +
+                "Focused on full-stack development, including front-end design, server-side scripting, and database \n" +
+                "management.",
+            des3 :"Expecting to Graduate by 2024 November."
+        }
+    }
 ]

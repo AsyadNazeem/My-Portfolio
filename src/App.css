@@ -71,21 +71,32 @@
     font-size: 1.3rem;
 }
 
-.top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 140px 0 50px 0;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .Home {
-    margin: 10px 0 0 0;
+    max-width: 970px; /* Adjust the width according to your preference */
+    margin: 0 auto; /* This centers the container */
+    padding: 0 20px; /* Adds some padding on the sides */
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0 50px 0;
+}
+
+.separator{
+    margin: 200px 0 200px 0;
 }
 
 .heading {
     font-size: 50px;
     font-weight: 700;
-    margin: 0 340px 0 0;
     padding: 0;
     text-align: left;
     color: var(--secondary-color);
@@ -118,32 +129,38 @@
 
 .images {
     display: flex;
-    width: 270px; /* Adjust the dimensions as per your requirements */
-    height: 270px;
+    width: 250px; /* Adjust the dimensions as per your requirements */
+    height: 250px;
     border-radius: 50%; /* This creates the circle shape */
     overflow: hidden; /* Clips the image to the container's shape */
 }
 
 .images img {
     width: 130%;
-    height: 95%;
+    height: 105%;
 }
 
 .tech-stack {
     margin: 150px 0 0 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .languages {
     font-size: 20px;
-    width: 10%;
-    text-align: center;
+    margin: 10px 40px 0 30px;
 }
 
+.line{
+    height:40px;
+    width: 2px;
+    background-color: black;
+    margin-left: 15px;
+}
+
+
 .languages span {
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: 20px;
     height: 60px;
     font-weight: 300;
@@ -156,14 +173,12 @@
 }
 
 .logo {
-    width: 20px;
-    padding: 10px 40px;
+    width: 40px;
+    padding: 10px 30px;
 }
-
 
 .summary-about {
     margin-top: 20px;
-    padding: 200px 0 250px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +186,7 @@
 }
 
 .summary-about-img > img {
-    width: 350px;
+    width: 380px;
     height: auto;
     border-radius: 1rem;
 }
@@ -183,39 +198,59 @@
 }
 
 .summary-about-subheading {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: var(--subheading-color);
     margin: 0 0 5px 0;
 }
 
 .summary-about-paragraph {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--paragraph-color);
-    max-width: 100%;
+    width: 100%;
+}
+
+.edu-heading{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-text-color);
+    margin-bottom: -20px;
+}
+
+.edu-subheading {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.icbt{
+    display: flex;
+}
+
+.exp{
+    display: flex;
 }
 
 .portfolio-heading {
     font-size: 18px;
     font-weight: 700;
     color: var(--heading-text-color);
-    margin: 0 0 0 22.5%;
+    margin-bottom: -20px;
 }
 
 .portfolio-subheading {
     font-size: 20px;
     font-weight: 500;
     color: var(--secondary-color);
-    margin: 0 0 5px 22.5%;
+
 }
 
 .project1 {
     margin: 50px 0 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 70px;
 }
 
 .project-img > img {
@@ -242,10 +277,9 @@
 .project2 {
     margin: 150px 0 150px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    gap: 70px;
 }
 
 .used-languages {
@@ -299,22 +333,19 @@
     color: var(--subheading-color);
 }
 
-.contacts {
-    margin: 150px 0 100px 0;
-}
 
 .contacts-heading {
     font-size: 18px;
     font-weight: 700;
     color: var(--heading-text-color);
-    margin: 0 0 0 22.5%;
+    margin-bottom: -20px;
 }
 
 .contacts-subheading {
     font-size: 20px;
     font-weight: 500;
     color: var(--secondary-color);
-    margin: 0 0 50px 22.5%;
+    margin-bottom: 50px;
 }
 
 .contact-details {
@@ -327,18 +358,18 @@
 
 .row1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 62px;
 }
 
 .contact-location {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     box-shadow: var(--box-shadow);
-    padding: 15px 80px;
+    padding: 15px 50px;
     border-radius: 1rem;
 }
 
@@ -365,13 +396,38 @@
     margin: 20px 0 0 0;
 }
 
+.contact-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow:var(--box-shadow);
+    padding: 8px 40px;
+    border-radius: 1rem;
+}
+
+.contact-phone img {
+    width: 30px;
+    margin: 10px 0 0 0;
+    color: var(--heading-text-color);
+}
+
+.contact-phone h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    width: 100%;
+    text-align: left;
+    margin-bottom: -15px;
+}
+
 .contact-mail {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     box-shadow: var(--box-shadow);
-    padding: 15px 60px;
+    padding: 15px 50px;
     border-radius: 1rem;
 }
 
@@ -396,7 +452,7 @@
     color: var(--subheading-color);
     width: 100%;
     text-align: left;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .contact-Resume {
@@ -404,7 +460,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow);
-    padding: 2% 30.2%;
+    padding: 10px 55px;
     border-radius: 1rem;
     gap: 30px;
 }
@@ -415,7 +471,7 @@
     /*align-items: flex-start;*/
     gap: 20px;
     background-color: var(--secondary-color);
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 1rem;
     color: var(--primary-color);
     font-size: 15px;
@@ -424,6 +480,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.wording{
+    width: 100%;
+    font-weight: 300;
 }
 
 .footer {
@@ -444,31 +505,6 @@
     text-align: left;
 }
 
-.contact-phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    box-shadow:var(--box-shadow);
-    padding: 10px 60px;
-    border-radius: 1rem;
-}
-
-.contact-phone img {
-    width: 30px;
-    margin: 10px 0 0 0;
-    color: var(--heading-text-color);
-}
-
-.contact-phone h1 {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--secondary-color);
-    width: 100%;
-    text-align: left;
-    margin-bottom: -15px;
-}
-
 .footer-ico {
     display: flex;
     justify-content: center;
@@ -485,6 +521,16 @@
 .footer-github > a > img {
     width: 20px;
     margin: 10px 0 0 0;
+}
+
+.head{
+    display: flex;
+}
+
+.line1{
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, black, transparent);
 }
 
 @media screen and (max-width: 1400px) {
@@ -577,6 +623,7 @@
     .Home {
         margin: unset;
         padding-bottom: 20px;
+        max-width: 500px;
     }
 
     .heading {
@@ -629,17 +676,34 @@
 
     .tech-stack {
         margin: 110px 0 70px 0;
-        display: flex;
+        display: inline-block;
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+
+    .head{
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .line{
+        width: 180%;
+        height: 2px;
+        text-align: center;
+        background: linear-gradient(to right, transparent, black, transparent);
+        display: none;
+    }
+
+    .separator {
+        margin: 20px 0 20px 0;
     }
 
     .languages {
-        font-size: 10px;
-        /*width: 20%;*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        margin: 0;
     }
 
     .languages span {
@@ -650,10 +714,7 @@
     }
 
     .language-logos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
+        width: 100%;
     }
 
     .logo {
@@ -661,11 +722,11 @@
         padding: 5px 10px;
     }
 
-    .logo > img {
-        width: 20px;
-        height: 20px;
-        padding: 5px;
-    }
+    /*.logo > img {*/
+    /*    width: 20px;*/
+    /*    height: 20px;*/
+    /*    padding: 5px;*/
+    /*}*/
 
     .summary-about {
         margin: 30px 0;
@@ -674,23 +735,34 @@
     }
 
     .summary-about-img > img {
-        width: 350px;
+        width: 280px;
         height: auto;
         border-radius: 1rem;
+
     }
 
     .summary-about-heading {
-        text-align: center;
+        text-align: left;
     }
 
     .summary-about-subheading {
-        text-align: center;
+        text-align: left;
     }
 
     .summary-about-paragraph {
-        margin: 30px auto 0 auto;
-        width: 90%;
-        text-align: center;
+        width: 100%;
+        text-align: left;
+    }
+
+    .icbt{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .exp{
+        display: block;
     }
 
     .portfolio{
