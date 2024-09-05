@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import mySticker from "../images/profileImg.png";
 import aboutPhoto from "../images/aboutImage1.png";
 import experience from "../images/aboutImage.png";
@@ -11,6 +11,9 @@ import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import { projects } from "../../Data/Data";
 import Projects from "../Projects";
+import TechStack from "./TechStack";
+
+
 
 const project = projects.map((item) => {
   const descriptionLines = item.description.split("\n").map((line, index) => (
@@ -27,6 +30,7 @@ const project = projects.map((item) => {
   );
 });
 
+
 // const degreeElements = degree.map(item1 => {
 //     return (
 //         <Degree
@@ -40,8 +44,24 @@ function btnclick() {
   window.open(Resume);
 }
 
-
 export default function Home(item) {
+    
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        const isMobileView = window.innerWidth <= 700;
+        console.log("Is Mobile View:", isMobileView);
+        setIsMobile(isMobileView);
+      };
+  
+      handleResize(); // Check on initial load
+      window.addEventListener('resize', handleResize);
+  
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+
   return (
     <body>
       <div>
@@ -101,72 +121,7 @@ export default function Home(item) {
                 <h1 className="languages"> Tech Stack </h1>
                 <div className="line"></div>
               </div>
-
-              <div className="language-logos">
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/color/48/html-5--v1.png"
-                    alt="html-5--v1"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/color/48/css3.png"
-                    alt="css3"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-                    alt="javascript--v1"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="65"
-                    src="https://www.vectorlogo.zone/logos/php/php-ar21.svg"
-                    alt="php"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/color/48/react-native.png"
-                    alt="react-native"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/color/48/nodejs.png"
-                    alt="nodejs"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
-                    alt="mongodb"
-                  />
-                </div>
-                <div className="logo">
-                  <img
-                    width="35"
-                    height="35"
-                    src="https://img.icons8.com/color/48/000000/mongodb.png"
-                    alt="mongodb"
-                  />
-                </div>
-              </div>
+              <TechStack />
             </div>
           </section>
 
@@ -238,9 +193,6 @@ export default function Home(item) {
                 MySQL and MongoDB, allows me to create reliable and
                 high-performance data-driven applications.
               </p>
-
-
-
 
               <p>
                 I am also proficient in version control systems like Git and
@@ -317,7 +269,7 @@ export default function Home(item) {
                     </li>
                   </ul>
                 </div>
-                <div className="summary-about-img">
+                <div className="summary-edu-img">
                   <img src={edu} alt="computer photo" />
                 </div>
               </div>
@@ -342,48 +294,71 @@ export default function Home(item) {
           </div>
 
           <section name="experience">
-    <div className="edu">
-        <h1 className="edu-heading">Experience</h1>
-        <h2 className="edu-subheading">Here are a few projects I've worked on recently.</h2>
+            <div className="edu">
+              <h1 className="edu-heading">Experience</h1>
+              <h2 className="edu-subheading">
+                Here are a few projects I've worked on recently.
+              </h2>
 
-        <div className="exp">
-            <div className="summary-about-img" style={{ marginTop: "90px" }}>
-                <img src={experience} alt="computer photo" />
-            </div>
-            <div>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div className="exp">
+                <div className="summary-exp-img">
+                  <img src={experience} alt="computer photo" />
+                </div>
+                <div>
+                  <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
                     <h4>Associate Software Engineer (PHP)</h4>
                     <h4>February 2024 - Present</h4>
-                </div>
-                <p>
-                    Currently, I work as an Associate Software Engineer (PHP) at Csquare Holdings Pvt Ltd, where I lead the design, development, and maintenance of Enterprise Resource Planning (ERP) systems, significantly enhancing operational efficiency. My role involves writing clean, efficient, and maintainable code in PHP and other programming languages, ensuring the delivery of high-quality software solutions.
-                </p>
-                <ul>
+                  </div>
+                  <p>
+                    Currently, I work as an Associate Software Engineer (PHP) at
+                    Csquare Holdings Pvt Ltd, where I lead the design,
+                    development, and maintenance of Enterprise Resource Planning
+                    (ERP) systems, significantly enhancing operational
+                    efficiency. My role involves writing clean, efficient, and
+                    maintainable code in PHP and other programming languages,
+                    ensuring the delivery of high-quality software solutions.
+                  </p>
+                  <ul>
                     <li>Lead design and development of ERP systems</li>
-                    <li>Write clean, efficient, and maintainable code in PHP</li>
+                    <li>
+                      Write clean, efficient, and maintainable code in PHP
+                    </li>
                     <li>Optimize MySQL databases to improve data management</li>
-                    <li>Contribute to overall system design and architecture</li>
+                    <li>
+                      Contribute to overall system design and architecture
+                    </li>
                     <li>Integrate new features and resolve complex issues</li>
-                </ul>
+                  </ul>
 
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
                     <h4>Intern Software Engineer (PHP)</h4>
                     <h4>August 2023 - January 2024</h4>
-                </div>
-                <p>
-                    Before this, I completed a six-month internship as a Full-Stack Software Engineer (PHP) at Csquare Holdings Pvt Ltd. During this period, I applied coding best practices under the guidance of senior developers, contributing to the development, testing, and maintenance of software applications.
-                </p>
-                <ul>
-                    <li>Contributed to development, testing, and maintenance of applications</li>
+                  </div>
+                  <p>
+                    Before this, I completed a six-month internship as a
+                    Full-Stack Software Engineer (PHP) at Csquare Holdings Pvt
+                    Ltd. During this period, I applied coding best practices
+                    under the guidance of senior developers, contributing to the
+                    development, testing, and maintenance of software
+                    applications.
+                  </p>
+                  <ul>
+                    <li>
+                      Contributed to development, testing, and maintenance of
+                      applications
+                    </li>
                     <li>Executed test plans to ensure software quality</li>
                     <li>Identified and resolved bugs to enhance performance</li>
                     <li>Gained experience in database design and management</li>
-                </ul>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-
+          </section>
 
           <div
             className="separator"

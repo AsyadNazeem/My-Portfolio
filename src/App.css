@@ -237,6 +237,12 @@ body {
     color: var(--secondary-color);
 }
 
+.summary-edu-img > img {
+    width: 380px;
+    height: auto;
+    border-radius: 1rem;
+}
+
 .exp-points {
     list-style-type: disc;
     margin-left: 20px;
@@ -256,6 +262,12 @@ body {
 
 .exp{
     display: flex;
+}
+
+.summary-exp-img > img {
+    width: 380px;
+    height: auto;
+    border-radius: 1rem;
 }
 
 .portfolio-heading {
@@ -688,8 +700,8 @@ body {
 
     .images {
         display: flex;
-        width: 200px; /* Adjust the dimensions as per your requirements */
-        height: 200px;
+        width: 400px; /* Adjust the dimensions as per your requirements */
+        height: 400px;
         margin: 0 auto -60px auto;
         border-radius: 50%; /* This creates the circle shape */
         overflow: hidden; /* Clips the image to the container's shape */
@@ -702,78 +714,86 @@ body {
 
     .tech-stack {
         margin: 110px 0 70px 0;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        flex-direction: column; /* Stack header and logos vertically */
+        align-items: center; /* Center content horizontally */
     }
-
-    .head{
-        display: inline-block;
-        justify-content: center;
+    
+    .head {
+        display: flex;
+        justify-content: center; /* Center header horizontally */
+        align-items: center; /* Center header vertically */
     }
-
-    .line{
+    
+    .line {
         width: 180%;
         height: 2px;
-        text-align: center;
         background: linear-gradient(to right, transparent, black, transparent);
-        display: none;
+        display: none; /* Hide the line on mobile */
     }
-
+    
     .separator {
-        margin: 20px 0 20px 0;
+        margin: 20px 0;
     }
-
+    
     .languages {
-        font-size: 15px;
-        display: flex; /* Use Flexbox to center content */
-        justify-content: center; /* Center horizontally */
+        font-size: 22px;
+        display: flex; /* Flexbox for centering content */
+        justify-content: center; /* Center content horizontally */
         width: 100%;
         margin: 0;
-        align-items: center; /* Optional: center vertically if needed */
+        align-items: center;
     }
-
+    
     .languages span {
         margin-left: 30%;
         font-size: 13px;
         height: 20px;
         font-weight: 200;
     }
-
+    
     .language-logos {
         display: grid; /* Enable grid layout */
-        grid-template-columns: repeat(5, 1fr); /* Create 5 columns */
-        grid-template-rows: auto auto; /* Two rows */
-        gap: 35px; /* Space between items */
+        grid-template-columns: repeat(5, 1fr); /* 5 columns for the first row */
+        grid-template-rows: repeat(2, auto); /* 2 rows for the grid */
+        gap: 20px; /* Space between items */
         justify-items: center; /* Center items within grid cells */
         text-align: center; /* Center text inside grid items */
-        max-width: 100%; /* Ensure the grid does not overflow the container */
-        width: fit-content; /* Ensure the width fits the content */
+        width: 100%; /* Full width of the container */
+        margin-top: 50px;
     }
-
-    /* Additional style to ensure centered alignment for the second row */
-    .language-logos > .logo:nth-child(6) {
-        grid-column: span 5; /* Make the first item of the second row span across all columns */
+    
+    .language-logos > .logo:nth-child(n+6) {
+        grid-column: span 1; /* Place the 6th item and beyond correctly */
     }
-
+    
+    .language-logos > .logo:nth-child(1),
+    .language-logos > .logo:nth-child(2),
+    .language-logos > .logo:nth-child(3),
+    .language-logos > .logo:nth-child(4),
+    .language-logos > .logo:nth-child(5) {
+        grid-column: span 1; /* Each of the first 5 items occupies 1 column */
+    }
+    
+    .language-logos > .logo:nth-child(6),
+    .language-logos > .logo:nth-child(7),
+    .language-logos > .logo:nth-child(8) {
+        grid-column: span 1; /* Each of the last 3 items occupies 1 column */
+    }
+    
     .logo {
         margin: 0;
         padding: 0;
     }
-
+    
     .logo img {
         display: block; /* Remove default inline spacing */
         margin: 0;
         padding: 0;
         border: none; /* Ensure no borders are adding extra space */
+        max-width: 100%; /* Ensure the image scales properly */
     }
-
-    /*.logo > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*    padding: 5px;*/
-    /*}*/
+    
 
     .summary-about {
         margin: 30px 0;
@@ -785,7 +805,6 @@ body {
         width: 280px;
         height: auto;
         border-radius: 1rem;
-
     }
 
     .summary-about-heading {
@@ -808,8 +827,41 @@ body {
         justify-items: center;
     }
 
+    .summary-edu-img {
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically */
+        width: 100%; /* Ensure the container takes up the full width */
+        height: 100%; /* Adjust this if you want the container to have a specific height */
+        text-align: center; /* This is optional, mostly used for inline elements */
+        margin: 90px 0 90px 0;
+    }
+    
+    .summary-edu-img > img {
+        width: 280px;
+        height: auto;
+        border-radius: 1rem;
+    }
+    
+
     .exp{
         display: block;
+    }
+
+    .summary-exp-img {
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically */
+        width: 100%; /* Ensure the container takes up the full width */
+        height: 100%; /* Adjust this if you want the container to have a specific height */
+        text-align: center; /* This is optional, mostly used for inline elements */
+        margin: 90px 0 90px 0;
+    }
+    
+    .summary-exp-img > img {
+        width: 280px;
+        height: auto;
+        border-radius: 1rem;
     }
 
     .portfolio{
