@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.82a08ef0.css",
-    "main.js": "/My-Portfolio/static/js/main.6fe38a36.js",
+    "main.css": "/My-Portfolio/static/css/main.4b193627.css",
+    "main.js": "/My-Portfolio/static/js/main.a3b208a4.js",
     "static/js/787.128fc6e9.chunk.js": "/My-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/aboutImage1.png": "/My-Portfolio/static/media/aboutImage1.6e226949e4a8bd911809.png",
     "static/media/aboutImage.png": "/My-Portfolio/static/media/aboutImage.0a4cd43a07ee9d4b45d4.png",
@@ -9,15 +9,15 @@
     "static/media/edu.png": "/My-Portfolio/static/media/edu.135645349adadeb3d80b.png",
     "static/media/ERP.png": "/My-Portfolio/static/media/ERP.681f2255a4c4bc174f77.png",
     "static/media/mubarak.jpeg": "/My-Portfolio/static/media/mubarak.88bd252b7c6d44112273.jpeg",
+    "static/media/profileImg.png": "/My-Portfolio/static/media/profileImg.9e3278562a554d3ef4b1.png",
     "static/media/AsyadNazeemResume.pdf": "/My-Portfolio/static/media/AsyadNazeemResume.55b0df0331c25e14de74.pdf",
-    "static/media/mySticker.png": "/My-Portfolio/static/media/mySticker.9d6b4a3bb29610141ecc.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.82a08ef0.css.map": "/My-Portfolio/static/css/main.82a08ef0.css.map",
-    "main.6fe38a36.js.map": "/My-Portfolio/static/js/main.6fe38a36.js.map",
+    "main.4b193627.css.map": "/My-Portfolio/static/css/main.4b193627.css.map",
+    "main.a3b208a4.js.map": "/My-Portfolio/static/js/main.a3b208a4.js.map",
     "787.128fc6e9.chunk.js.map": "/My-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82a08ef0.css",
-    "static/js/main.6fe38a36.js"
+    "static/css/main.4b193627.css",
+    "static/js/main.a3b208a4.js"
   ]
 }
