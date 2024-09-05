@@ -129,8 +129,8 @@ body {
 
 .images {
     display: flex;
-    width: 250px; /* Adjust the dimensions as per your requirements */
-    height: 250px;
+    width: 400px; /* Adjust the dimensions as per your requirements */
+    height: 400px;
     border-radius: 50%; /* This creates the circle shape */
     overflow: hidden; /* Clips the image to the container's shape */
 }
@@ -211,6 +211,19 @@ body {
     width: 100%;
 }
 
+.summary-points {
+    list-style-type: disc;
+    margin-left: 0;
+    margin-top: 10px;
+    color: var(--paragraph-color);
+    font-weight: 600; /* Makes the points stand out */
+}
+
+.summary-points li {
+    margin-bottom: 5px; /* Adds spacing between each point */
+}
+
+
 .edu-heading{
     font-size: 18px;
     font-weight: 700;
@@ -223,6 +236,19 @@ body {
     font-weight: 500;
     color: var(--secondary-color);
 }
+
+.exp-points {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: var(--paragraph-color);
+    font-weight: 600; /* Makes the points stand out */
+}
+
+.exp-points li {
+    margin-bottom: 5px; /* Adds spacing between each point */
+}
+
 
 .icbt{
     display: flex;
@@ -701,9 +727,11 @@ body {
 
     .languages {
         font-size: 15px;
-        display: block;
+        display: flex; /* Use Flexbox to center content */
+        justify-content: center; /* Center horizontally */
         width: 100%;
         margin: 0;
+        align-items: center; /* Optional: center vertically if needed */
     }
 
     .languages span {
@@ -714,12 +742,31 @@ body {
     }
 
     .language-logos {
-        width: 100%;
+        display: grid; /* Enable grid layout */
+        grid-template-columns: repeat(5, 1fr); /* Create 5 columns */
+        grid-template-rows: auto auto; /* Two rows */
+        gap: 35px; /* Space between items */
+        justify-items: center; /* Center items within grid cells */
+        text-align: center; /* Center text inside grid items */
+        max-width: 100%; /* Ensure the grid does not overflow the container */
+        width: fit-content; /* Ensure the width fits the content */
+    }
+
+    /* Additional style to ensure centered alignment for the second row */
+    .language-logos > .logo:nth-child(6) {
+        grid-column: span 5; /* Make the first item of the second row span across all columns */
     }
 
     .logo {
-        width: 20px;
-        padding: 5px 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo img {
+        display: block; /* Remove default inline spacing */
+        margin: 0;
+        padding: 0;
+        border: none; /* Ensure no borders are adding extra space */
     }
 
     /*.logo > img {*/
