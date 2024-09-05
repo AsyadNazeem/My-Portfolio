@@ -700,11 +700,14 @@ body {
 
     .images {
         display: flex;
-        width: 400px; /* Adjust the dimensions as per your requirements */
-        height: 400px;
+        width: auto; /* Adjust the dimensions as per your requirements */
         margin: 0 auto -60px auto;
         border-radius: 50%; /* This creates the circle shape */
         overflow: hidden; /* Clips the image to the container's shape */
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+        align-items: center;
+        justify-content: ;
     }
 
     .images img {
