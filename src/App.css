@@ -232,9 +232,10 @@ body {
 }
 
 .edu-subheading {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--subheading-color);
+    margin: 30px 0 5px 0;
 }
 
 .summary-edu-img > img {
@@ -260,7 +261,7 @@ body {
     display: flex;
 }
 
-.exp{
+.exp1{
     display: flex;
 }
 
@@ -278,10 +279,10 @@ body {
 }
 
 .portfolio-subheading {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    color: var(--secondary-color);
-
+    color: var(--subheading-color);
+    margin: 30px 0 5px 0;
 }
 
 .project1 {
@@ -380,10 +381,10 @@ body {
 }
 
 .contacts-subheading {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    color: var(--secondary-color);
-    margin-bottom: 50px;
+    color: var(--subheading-color);
+    margin: 30px 0 25px 0;
 }
 
 .contact-details {
@@ -823,6 +824,11 @@ body {
         text-align: left;
     }
 
+    .summary-about-paragraph2 {
+        padding: 0 25px 50px 25px;
+        margin-top: -70px;
+    }
+
     .icbt{
         display: block;
         justify-content: center;
@@ -846,8 +852,15 @@ body {
         border-radius: 1rem;
     }
     
+    .edu, .exp {
+        padding: 10px 25px 50px 25px;
+    }
 
-    .exp{
+    .edu-subheading{
+        text-align: left;
+    }
+
+    .exp1{
         display: block;
     }
 
@@ -868,18 +881,22 @@ body {
     }
 
     .portfolio{
-        padding: 20px 20px;
+        padding: 10px 25px 50px 25px;
     }
 
     .portfolio-heading {
-        text-align: center;
+        text-align: left;
         margin: unset;
     }
 
     .portfolio-subheading {
-        text-align: center;
+        text-align: left;
         margin: unset;
     }
+
+.project-details{
+    margin-top: 50px;
+}
 
     .project1{
         flex-direction: column;
@@ -898,16 +915,16 @@ body {
 
     .contacts {
         margin: 60px 0;
+        padding: 10px 25px 50px 25px;
     }
 
     .contacts-heading {
         margin: unset;
-        text-align: center;
+        text-align: left;
     }
 
     .contacts-subheading {
-        margin: auto;
-        text-align: center;
+        text-align: left;
         width: 80%;
     }
 
@@ -955,18 +972,19 @@ body {
         padding: 5% 3.2%;
         border-radius: 1rem;
         gap: 30px;
+        font-size: 10px;
     }
 
     .resume-btn{
-        /*display: flex;*/
-        /*justify-content: flex-start;*/
-        /*align-items: flex-start;*/
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 20px;
         background-color: var(--secondary-color);
         padding: 10px 25px;
         border-radius: 1rem;
         color: var(--primary-color);
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 500;
         text-decoration: none;
         border: none;

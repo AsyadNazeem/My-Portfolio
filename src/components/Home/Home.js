@@ -184,7 +184,7 @@ export default function Home(item) {
                 </div>
               </div>
             </div>
-            <div className="summary-about-paragraph1">
+            <div className="summary-about-paragraph2">
               <p className="summary-about-paragraph">
                 On the back-end, I specialize in designing and optimizing
                 server-side components with Node.js, Express, PHP, and MySQL,
@@ -223,9 +223,11 @@ export default function Home(item) {
           <section name="education">
             <div className="edu">
               <h1 className="edu-heading">Education</h1>
+              <div className="edu-subheading">
               <h2 className="edu-subheading">
-                Here are a few projects I've worked on recently.
+              Academic Journey & Milestones
               </h2>
+              </div>
               <div className="icbt">
                 <div>
                   <p>
@@ -294,13 +296,13 @@ export default function Home(item) {
           </div>
 
           <section name="experience">
-            <div className="edu">
+            <div className="exp">
               <h1 className="edu-heading">Experience</h1>
               <h2 className="edu-subheading">
-                Here are a few projects I've worked on recently.
+                Professional Experience & Achievements
               </h2>
 
-              <div className="exp">
+              <div className="exp1">
                 <div className="summary-exp-img">
                   <img src={experience} alt="computer photo" />
                 </div>
