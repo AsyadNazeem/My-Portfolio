@@ -194,14 +194,20 @@ export default function Home(item) {
                 high-performance data-driven applications.
               </p>
 
-              <p>
+              <p style={{fontSize:"16px",
+                fontWeight:"400",
+                color:"gray"
+              }}>
                 I am also proficient in version control systems like Git and
                 GitHub, which I use to manage and collaborate on projects
                 effectively. My work is driven by a commitment to best practices
                 in coding, testing, and project management, ensuring that the
                 solutions I develop are of the highest quality.
               </p>
-              <p>
+              <p style={{fontSize:"16px",
+                fontWeight:"400",
+                color:"gray"
+              }}>
                 Whether I’m spearheading the development of an Enterprise
                 Resource Planning (ERP) system or collaborating with
                 cross-functional teams to integrate new features, my focus
@@ -224,13 +230,13 @@ export default function Home(item) {
             <div className="edu">
               <h1 className="edu-heading">Education</h1>
               <div className="edu-subheading">
-              <h2 className="edu-subheading">
+              <h2 className="edu-subheading" style={{marginBottom: "-0px"}}>
               Academic Journey & Milestones
               </h2>
               </div>
               <div className="icbt">
                 <div>
-                  <p>
+                  <p className="summary-about-paragraph">
                     I have pursued a comprehensive and rigorous academic journey
                     in the field of software engineering, beginning with the
                     completion of my Higher Diploma in Software Engineering and
@@ -252,7 +258,7 @@ export default function Home(item) {
                     </li>
                   </ul>
 
-                  <p>
+                  <p className="summary-about-paragraph">
                     Building on this foundation, I am currently advancing my
                     expertise by pursuing a BSc Hons in Software Engineering at
                     ICBT Campus, Colombo, which I started in May 2023 and am
@@ -308,12 +314,12 @@ export default function Home(item) {
                 </div>
                 <div>
                   <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                    style={{ display: "flex", justifyContent: "space-between", fontSize: "16px", fontWeight:"400", marginBottom: "-30px" }}
                   >
-                    <h4>Associate Software Engineer (PHP)</h4>
-                    <h4>February 2024 - Present</h4>
+                    <h4 style={{fontSize: "16px", fontWeight:"500"}}>Associate Software Engineer (PHP)</h4>
+                    <h4 style={{fontSize: "16px", fontWeight:"500"}}>February 2024 - Present</h4>
                   </div>
-                  <p>
+                  <p className="summary-about-paragraph">
                     Currently, I work as an Associate Software Engineer (PHP) at
                     Csquare Holdings Pvt Ltd, where I lead the design,
                     development, and maintenance of Enterprise Resource Planning
@@ -322,7 +328,7 @@ export default function Home(item) {
                     maintainable code in PHP and other programming languages,
                     ensuring the delivery of high-quality software solutions.
                   </p>
-                  <ul>
+                  <ul class="exp-points">
                     <li>Lead design and development of ERP systems</li>
                     <li>
                       Write clean, efficient, and maintainable code in PHP
@@ -335,12 +341,12 @@ export default function Home(item) {
                   </ul>
 
                   <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                    style={{ display: "flex", justifyContent: "space-between", marginBottom: "-30px" }}
                   >
-                    <h4>Intern Software Engineer (PHP)</h4>
-                    <h4>August 2023 - January 2024</h4>
+                    <h4 style={{fontSize: "16px", fontWeight:"500"}}>Intern Software Engineer (PHP)</h4>
+                    <h4 style={{fontSize: "16px", fontWeight:"500"}}>August 2023 - January 2024</h4>
                   </div>
-                  <p>
+                  <p className="summary-about-paragraph">
                     Before this, I completed a six-month internship as a
                     Full-Stack Software Engineer (PHP) at Csquare Holdings Pvt
                     Ltd. During this period, I applied coding best practices
@@ -348,7 +354,7 @@ export default function Home(item) {
                     development, testing, and maintenance of software
                     applications.
                   </p>
-                  <ul>
+                  <ul class="exp-points">
                     <li>
                       Contributed to development, testing, and maintenance of
                       applications

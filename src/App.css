@@ -4,7 +4,7 @@
 
 * {
     font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Helvetica neue', sans-serif;
 }
 
 :root{
@@ -13,7 +13,7 @@
     --heading-text-color: dodgerblue;
     --subheading-color: gray;
     --paragraph-color: #111;
-    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
 /*.navbar{*/
@@ -30,28 +30,30 @@
 .navbar-header {
     font-size: 20px;
     margin-left: 30px;
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Helvetica neue', sans-serif;
+    font-weight: 800;
 }
 
 .nav-links {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: -20px;
+    padding: 8px;
 }
 
 .Navbar li {
+    font-size: 14px;
     list-style: none;
-    padding: 17.5px;
+    padding: 10px 18px;
     text-align: right;
     justify-content: flex-end;
-    font-weight: 600;
-    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-family: 'Helvetica neue', sans-serif;
 }
 
 .Navbar li:hover {
     /*background-color: #f2f2f2;*/
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -95,8 +97,9 @@ body {
 }
 
 .heading {
+    font-family: 'Helvetica neue', sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 900;
     padding: 0;
     text-align: left;
     color: var(--secondary-color);
@@ -104,7 +107,7 @@ body {
 
 .sub-heading {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 20px 0;
     padding: 0 0 0 3px;
     text-align: left;
@@ -147,8 +150,9 @@ body {
 }
 
 .languages {
-    font-size: 20px;
-    margin: 10px 40px 0 30px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 18px 40px 0 30px;
 }
 
 .line{
@@ -156,6 +160,7 @@ body {
     width: 2px;
     background-color: black;
     margin-left: 15px;
+    margin-top: 7px;
 }
 
 
@@ -199,24 +204,25 @@ body {
 
 .summary-about-subheading {
     font-size: 24px;
-    font-weight: 500;
-    color: var(--subheading-color);
+    font-weight: 400;
+    color: var(--paragraph-color);
     margin: 0 0 5px 0;
 }
 
 .summary-about-paragraph {
     font-size: 16px;
-    font-weight: 500;
-    color: var(--paragraph-color);
+    font-weight: 400;
+    color: var(--subheading-color);
     width: 100%;
 }
 
 .summary-points {
+    font-size: 16px;
     list-style-type: disc;
-    margin-left: 0;
+    margin-left: -25px;
     margin-top: 10px;
-    color: var(--paragraph-color);
-    font-weight: 600; /* Makes the points stand out */
+    color: var(--subheading-color);
+    font-weight: 400; /* Makes the points stand out */
 }
 
 .summary-points li {
@@ -233,9 +239,18 @@ body {
 
 .edu-subheading {
     font-size: 24px;
-    font-weight: 500;
-    color: var(--subheading-color);
+    font-weight: 400;
+    color: var(--paragraph-color);
     margin: 30px 0 5px 0;
+}
+
+.edu-points{
+    font-size: 15px;
+    list-style-type: disc;
+    margin-left: -25px;
+    margin-top: 10px;
+    color: var(--subheading-color);
+    font-weight: 400; /* Makes the points stand out */
 }
 
 .summary-edu-img > img {
@@ -246,10 +261,11 @@ body {
 
 .exp-points {
     list-style-type: disc;
-    margin-left: 20px;
+    font-size: 14px;
     margin-top: 10px;
-    color: var(--paragraph-color);
-    font-weight: 600; /* Makes the points stand out */
+    margin-left: -25px;
+    color: var(--subheading-color);
+    font-weight: 400; /* Makes the points stand out */
 }
 
 .exp-points li {
@@ -275,14 +291,13 @@ body {
     font-size: 18px;
     font-weight: 700;
     color: var(--heading-text-color);
-    margin-bottom: -20px;
 }
 
 .portfolio-subheading {
     font-size: 24px;
-    font-weight: 500;
-    color: var(--subheading-color);
-    margin: 30px 0 5px 0;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin: 0 0 25px 0;
 }
 
 .project1 {
@@ -377,14 +392,14 @@ body {
     font-size: 18px;
     font-weight: 700;
     color: var(--heading-text-color);
-    margin-bottom: -20px;
+
 }
 
 .contacts-subheading {
     font-size: 24px;
-    font-weight: 500;
-    color: var(--subheading-color);
-    margin: 30px 0 25px 0;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin: 0 0 25px 0;
 }
 
 .contact-details {
@@ -408,7 +423,7 @@ body {
     align-items: center;
     gap: 30px;
     box-shadow: var(--box-shadow);
-    padding: 15px 50px;
+    padding: 21px 40px;
     border-radius: 1rem;
 }
 
@@ -427,8 +442,8 @@ body {
 }
 
 .contact-location p {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     color: var(--subheading-color);
     width: 100%;
     text-align: left;
@@ -441,7 +456,7 @@ body {
     align-items: center;
     gap: 40px;
     box-shadow:var(--box-shadow);
-    padding: 8px 40px;
+    padding: 25px 40px;
     border-radius: 1rem;
 }
 
@@ -452,12 +467,21 @@ body {
 }
 
 .contact-phone h1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--secondary-color);
     width: 100%;
     text-align: left;
     margin-bottom: -15px;
+}
+
+.contact-phone p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--subheading-color);
+    width: 100%;
+    text-align: left;
+    margin: 20px 0 0 0;
 }
 
 .contact-mail {
@@ -466,7 +490,7 @@ body {
     align-items: center;
     gap: 40px;
     box-shadow: var(--box-shadow);
-    padding: 15px 50px;
+    padding: 21px 30px;
     border-radius: 1rem;
 }
 
@@ -477,7 +501,7 @@ body {
 }
 
 .contact-mail h1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--secondary-color);
     width: 100%;
@@ -486,12 +510,12 @@ body {
 }
 
 .contact-mail p {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     color: var(--subheading-color);
     width: 100%;
     text-align: left;
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .contact-Resume {
@@ -523,7 +547,8 @@ body {
 
 .wording{
     width: 100%;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .footer {
