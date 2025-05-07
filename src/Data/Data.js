@@ -1,101 +1,71 @@
-import mubarak from "../components/images/mubarak.jpeg";
-import travel from '../components/images/travel Website.png'
+import mubarak from "../components/images/mubarak.png";
+import parkinson from '../components/images/parkinson.png'
 import ERP from '../components/images/ERP.png'
 
 export const projects = [
     {
-        id: 1,
-        img: mubarak,
-        title: "Mubarak Enterprises",
-        description: "A website for a local business, Mubarak \n Enterprises. Built using React.js, Node.js, Express.js, \n MongoDB, and Bootstrap.",
-        languages: {
-            lang1: "React Js",
-            lang2: "Node Js",
-            lang3: "Express Js",
-            lang4: "MongoDB",
+        "id": 1,
+        "img": mubarak,
+        "title": "Mubarak Products",
+        "description": "A website for a local business, Mubarak \n Enterprises. Built using React.js, Vite and Tailwind.",
+        "languages": {
+            "lang1": "React Js",
+            "lang2": "Vite",
+            "lang3": "Tailwind"
         },
-        links1: {
-            code: "Code",
-            ico: "https://img.icons8.com/ios-filled/50/github.png",
-            url: "https://github.com/AsyadNazeem/Mubarak-Products"
+        "links1": {
+            "code": "Code",
+            "ico": "https://img.icons8.com/ios-filled/50/github.png",
+            "url": "https://github.com/AsyadNazeem/Mubarak-Products"
         },
-        links2: {
-            demo: "Demo",
-            ico: "https://img.icons8.com/ios-filled/50/domain.png"
+        "links2": {
+            "demo": "Demo",
+            "ico": "https://img.icons8.com/ios-filled/50/domain.png",
+            "url": "https://asyadnazeem.github.io/mubarak-product/"
         }
     },
     {
-        id: 2,
-        img: travel,
-        title: "Travel Website",
-        description: "A front-end web design for a Travel \n Website Created Using HTML, CSS/BootStrap and JavaScript",
-        languages: {
-            lang1: "HTML",
-            lang2: "CSS/Bootstrap",
-            lang3: "JavaScript",
+        "id": 2,
+        "img": parkinson,
+        "title": "Parkinson's Disease Detection",
+        "description": "A full-stack web app developed using Laravel (PHP), Python, Streamlit, and Scikit-learn to detect Parkinson's Disease from voice measurements. The frontend is styled using HTML and CSS.",
+        "languages": {
+            "lang1": "Python / Streamlit",
+            "lang2": "Laravel / PHP / SQL",
+            "lang3": "HTML / CSS"
         },
-        links1: {
-            code: "Code",
-            ico: "https://img.icons8.com/ios-filled/50/github.png",
-            url: "https://github.com/AsyadNazeem/Travel-webpage-home-page-design"
+        "links1": {
+            "code": "Code",
+            "ico": "https://img.icons8.com/ios-filled/50/github.png",
+            "url": "https://github.com/AsyadNazeem/parkinsons-disease-detection"
         },
-        links2: {
-            demo: "Demo",
-            ico: "https://img.icons8.com/ios-filled/50/domain.png"
+        "links2": {
+            "demo": "Demo",
+            "ico": "https://img.icons8.com/ios-filled/50/domain.png",
+            "url": "https://asyadnazeem-parkinsons-detection.streamlit.app/"
         }
     },
     {
-        id: 3,
-        img: ERP,
-        title: "Enterprise Resource Planning System",
-        description: "An Enterprise Resource Planning System \n did as an Individual project for an university assignment \n using HTML,CSS/BootStrap, JavaScript, " +
+        "id": 3,
+        "img": ERP,
+        "title": "Enterprise Resource Planning System",
+        "description": "An Enterprise Resource Planning System \n did as an Individual project for an university assignment \n using HTML,CSS/BootStrap, JavaScript, " +
             " \n PHP and MySql. ",
-        languages: {
-            lang1: "HTML",
-            lang2: "CSS/Bootstrap",
-            lang3: "JavaScript",
-            lang4: "PHP",
-            lang5: "MySQL",
+        "languages": {
+            "lang1": "HTML",
+            "lang2": "CSS/Bootstrap",
+           "lang3": "JavaScript",
+            "lang4": "PHP",
+            "lang5": "MySQL",
         },
-        links1: {
-            code: "Code",
-            ico: "https://img.icons8.com/ios-filled/50/github.png",
-            url: "https://github.com/AsyadNazeem/ERP-project"
+        "links1": {
+            "code": "Code",
+            "ico": "https://img.icons8.com/ios-filled/50/github.png",
+            "url": "https://github.com/AsyadNazeem/ERP-project"
         },
-        links2: {
-            demo: "Demo",
-            ico: "https://img.icons8.com/ios-filled/50/domain.png"
+        "links2": {
+            "demo": "Demo",
+            "ico": "https://img.icons8.com/ios-filled/50/domain.png"
         }
     },
-]
-
-export const educationData = [
-    {
-        id:1,
-        course: "BSc Hons Software Engineering",
-        campus: "Cardiff Metropolitan University",
-        year: "May 2023 - Reading",
-        description : {
-            des1 : "Completed the Higher Diploma in Software Engineering and Computing in November 2022 \n" +
-                "graduated in February 2023 and Started the final year in May 2023.",
-            des2 : "Developing dynamic and efficient web applications using HTML, CSS, PHP, JavaScript, and SQL. \n" +
-                "Focused on full-stack development, including front-end design, server-side scripting, and database \n" +
-                "management.",
-            des3 :"Expecting to Graduate by 2024 November."
-        }
-    },
-    {
-        id:2,
-        course: "Higher National Diploma in Software Engineering and Computing",
-        campus: "Cardiff Metropolitan University",
-        year: "May 2023 - Reading",
-        description : {
-            des1 : "Completed the Higher Diploma in Software Engineering and Computing in November 2022 \n" +
-                "graduated in February 2023 and Started the final year in May 2023.",
-            des2 : "Developing dynamic and efficient web applications using HTML, CSS, PHP, JavaScript, and SQL. \n" +
-                "Focused on full-stack development, including front-end design, server-side scripting, and database \n" +
-                "management.",
-            des3 :"Expecting to Graduate by 2024 November."
-        }
-    }
 ]

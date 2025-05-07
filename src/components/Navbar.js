@@ -1,6 +1,6 @@
-import React, {useRef, useEffect, useState} from "react";
-import {FaBars, FaTimes} from "react-icons/fa";
-import {Link} from "react-scroll";
+import React, { useRef, useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
     const navRef = useRef();
@@ -8,6 +8,10 @@ export default function Navbar() {
 
     const showNavbar = () => {
         setIsNavbarOpen(!isNavbarOpen);
+    };
+
+    const closeNavbar = () => {
+        setIsNavbarOpen(false);
     };
 
     useEffect(() => {
@@ -19,70 +23,89 @@ export default function Navbar() {
     }, [isNavbarOpen]);
 
     return (
-        <div>
-            <ul className="Navbar">
-                <div>
-                    <h1 className="navbar-header">dev.Asyad</h1>
-                </div>
-                <nav ref={navRef} className={`nav-links ${isNavbarOpen ? "responsive_nav" : ""}`}>
-                    <Link
-                        to="home">
-                        <li className="Navbar-link">Home</li>
-                    </Link>
-                    <Link
-                        className="Navbar-link"
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}>
-                        <li className="Navbar-link">About</li>
-                    </Link>
-                    <Link
-                        className="Navbar-link"
-                        activeClass="active"
-                        to="education"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}>
-                        <li className="Navbar-link">Education</li>
-                    </Link>
-                    <Link
-                        className="Navbar-link"
-                        activeClass="active"
-                        to="experience"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}>
-                        <li className="Navbar-link">Experience</li>
-                    </Link>
-                    <Link to="projects"
-                          activeClass="active"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}>
-                        <li className="Navbar-link">Projects</li>
-                    </Link>
-                    <Link to="contacts"
-                          activeClass="active"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}>
-                        <li className="Navbar-link">Contact</li>
-                    </Link>
-                    <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                        <FaTimes/>
-                    </button>
-                </nav>
-                <button className="nav-btn" onClick={showNavbar}>
-                    <FaBars/>
+        <header className="Navbar">
+            <div className="navbar-logo">
+                <h1 className="navbar-header">dev.Asyad</h1>
+            </div>
+            <nav ref={navRef} className={isNavbarOpen ? "responsive_nav" : ""}>
+                <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-item"
+                    onClick={closeNavbar}
+                >
+                    <li className="Navbar-link">Home</li>
+                </Link>
+                <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-item"
+                    activeClass="active"
+                    onClick={closeNavbar}
+                >
+                    <li className="Navbar-link">About</li>
+                </Link>
+                <Link
+                    to="education"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-item"
+                    activeClass="active"
+                    onClick={closeNavbar}
+                >
+                    <li className="Navbar-link">Education</li>
+                </Link>
+                <Link
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-item"
+                    activeClass="active"
+                    onClick={closeNavbar}
+                >
+                    <li className="Navbar-link">Experience</li>
+                </Link>
+                <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-item"
+                    activeClass="active"
+                    onClick={closeNavbar}
+                >
+                    <li className="Navbar-link">Projects</li>
+                </Link>
+                <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav-item"
+                    activeClass="active"
+                    onClick={closeNavbar}
+                >
+                    <li className="Navbar-link">Contact</li>
+                </Link>
+                <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                    <FaTimes />
                 </button>
-            </ul>
-        </div>
+            </nav>
+            <button className="nav-btn" onClick={showNavbar}>
+                <FaBars />
+            </button>
+        </header>
     );
 }

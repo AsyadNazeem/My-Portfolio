@@ -1,61 +1,39 @@
+// Projects.js - Component for individual project items
 import React from "react";
-import {projects} from "../Data/Data";
 
-const isEven = projects.map((item, index) => {
-    return index % 2 === 0;
-});
-
-export default function Projects(prop) {
-    const index = prop.item.id - 1; // Assuming the ID starts from 1
-    const even = isEven[index];
+export default function Project({ item, index }) {
+    const isEven = index % 2 === 0;
 
     return (
-        <div>
-            <div className={even ? "project1" : "project2"}>
-                <div className="project-img">
-                    <img src={prop.item.img} alt="mubarak web"/>
+        <div className={`project-item ${!isEven ? 'reversed' : ''}`}>
+            <div className="project-image">
+                <img src={item.img} alt={item.title} />
+            </div>
+
+            <div className="project-details">
+                <h3 className="project-title">{item.title}</h3>
+                <p className="project-description">{item.description}</p>
+
+                <div className="project-tech-stack">
+                    {Object.values(item.languages).filter(lang => lang).map((lang, i) => (
+                        <span key={i} className="tech-tag">{lang}</span>
+                    ))}
                 </div>
-                <div className="project-details">
-                    <h1 className="project-heading">{prop.item.title}</h1>
-                    <p className="project-paragraph">{prop.description}</p>
-                    <div className="used-languages">
-                        <div className="lang">
-                            <h1>{prop.item.languages.lang1}</h1>
-                        </div>
-                        <div className="lang">
-                            <h1>{prop.item.languages.lang2}</h1>
-                        </div>
-                        <div className="lang">
-                            <h1>{prop.item.languages.lang3}</h1>
-                        </div>
-                        <div className="lang">
-                            <h1>{prop.item.languages.lang4}</h1>
-                        </div>
-                    </div>
-                    <div className="links">
-                        <div className="mubarak-github">
-                            <div className="mubarak-code">
-                                <h1>{prop.item.links1.code}</h1>
-                            </div>
-                            <div>
-                                <a href={prop.item.links1.url} target="_blank" rel="noreferrer">
-                                    <img className='mubarak-img' src={prop.item.links1.ico} alt="github"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="mubarak-website">
-                            <div className="mubarak-code">
-                                <h1>{prop.item.links2.demo}</h1>
-                            </div>
-                            <div>
-                                <img className='mubarak-img'
-                                     src={prop.item.links2.ico}
-                                     alt="website"/>
-                            </div>
-                        </div>
-                    </div>
+
+                <div className="project-links">
+                    <a href={item.links1.url} className="project-link" target="_blank" rel="noreferrer">
+                        <img src={item.links1.ico} alt="GitHub" />
+                        <span>{item.links1.code}</span>
+                    </a>
+
+                    {item.links2.url && (
+                        <a href={item.links2.url} className="project-link" target="_blank" rel="noreferrer">
+                            <img src={item.links2.ico} alt="Demo" />
+                            <span>{item.links2.demo}</span>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>
-    )
+    );
 }
