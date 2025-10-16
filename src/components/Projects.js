@@ -10,6 +10,7 @@ export default function Project({ item, index }) {
                 <img src={item.img} alt={item.title} />
             </div>
 
+
             <div className="project-details">
                 <h3 className="project-title">{item.title}</h3>
                 <p className="project-description">{item.description}</p>

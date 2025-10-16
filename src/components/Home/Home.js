@@ -253,69 +253,69 @@ export default function Home(item) {
                 {/*    </div>*/}
                 {/*</section>*/}
 
-                <div
-                    className="separator"
-                    style={{display: "flex", justifyContent: "center"}}
-                >
-                    <div className="line1"></div>
-                </div>
+                {/*<div*/}
+                {/*    className="separator"*/}
+                {/*    style={{display: "flex", justifyContent: "center"}}*/}
+                {/*>*/}
+                {/*    <div className="line1"></div>*/}
+                {/*</div>*/}
 
-                <section className="experience-section" id="experience">
-                    <div className="experience-container">
-                        <div className="experience-header">
-                            <h2 className="experience-title">Experience</h2>
-                            <h3 className="experience-subtitle">Professional Experience & Achievements</h3>
-                        </div>
+                {/*<section className="experience-section" id="experience">*/}
+                {/*    <div className="experience-container">*/}
+                {/*        <div className="experience-header">*/}
+                {/*            <h2 className="experience-title">Experience</h2>*/}
+                {/*            <h3 className="experience-subtitle">Professional Experience & Achievements</h3>*/}
+                {/*        </div>*/}
 
-                        <div className="experience-content">
-                            <div className="experience-item">
-                                <div className="experience-item-header">
-                                    <h4 className="experience-item-title">Associate Software Engineer (PHP)</h4>
-                                    <p className="experience-item-period">February 2024 - Present</p>
-                                </div>
-                                <p className="experience-company">Csquare Holdings Pvt Ltd</p>
+                {/*        <div className="experience-content">*/}
+                {/*            <div className="experience-item">*/}
+                {/*                <div className="experience-item-header">*/}
+                {/*                    <h4 className="experience-item-title">Associate Software Engineer (PHP)</h4>*/}
+                {/*                    <p className="experience-item-period">February 2024 - Present</p>*/}
+                {/*                </div>*/}
+                {/*                <p className="experience-company">Csquare Holdings Pvt Ltd</p>*/}
 
-                                <p className="experience-paragraph">
-                                    Currently, I work as an Associate Software Engineer (PHP) at Csquare Holdings Pvt
-                                    Ltd, where I lead the design, development, and maintenance of Enterprise Resource
-                                    Planning (ERP) systems, significantly enhancing operational efficiency. My role
-                                    involves writing clean, efficient, and maintainable code in PHP and other
-                                    programming languages, ensuring the delivery of high-quality software solutions.
-                                </p>
+                {/*                <p className="experience-paragraph">*/}
+                {/*                    Currently, I work as an Associate Software Engineer (PHP) at Csquare Holdings Pvt*/}
+                {/*                    Ltd, where I lead the design, development, and maintenance of Enterprise Resource*/}
+                {/*                    Planning (ERP) systems, significantly enhancing operational efficiency. My role*/}
+                {/*                    involves writing clean, efficient, and maintainable code in PHP and other*/}
+                {/*                    programming languages, ensuring the delivery of high-quality software solutions.*/}
+                {/*                </p>*/}
 
-                                <ul className="experience-details-list">
-                                    <li>Lead design and development of ERP systems</li>
-                                    <li>Write clean, efficient, and maintainable code in PHP</li>
-                                    <li>Optimize MySQL databases to improve data management</li>
-                                    <li>Contribute to overall system design and architecture</li>
-                                    <li>Integrate new features and resolve complex issues</li>
-                                </ul>
-                            </div>
+                {/*                <ul className="experience-details-list">*/}
+                {/*                    <li>Lead design and development of ERP systems</li>*/}
+                {/*                    <li>Write clean, efficient, and maintainable code in PHP</li>*/}
+                {/*                    <li>Optimize MySQL databases to improve data management</li>*/}
+                {/*                    <li>Contribute to overall system design and architecture</li>*/}
+                {/*                    <li>Integrate new features and resolve complex issues</li>*/}
+                {/*                </ul>*/}
+                {/*            </div>*/}
 
-                            <div className="experience-item">
-                                <div className="experience-item-header">
-                                    <h4 className="experience-item-title">Intern Software Engineer (PHP)</h4>
-                                    <p className="experience-item-period">August 2023 - January 2024</p>
-                                </div>
-                                <p className="experience-company">Csquare Holdings Pvt Ltd</p>
+                {/*            <div className="experience-item">*/}
+                {/*                <div className="experience-item-header">*/}
+                {/*                    <h4 className="experience-item-title">Intern Software Engineer (PHP)</h4>*/}
+                {/*                    <p className="experience-item-period">August 2023 - January 2024</p>*/}
+                {/*                </div>*/}
+                {/*                <p className="experience-company">Csquare Holdings Pvt Ltd</p>*/}
 
-                                <p className="experience-paragraph">
-                                    Before this, I completed a six-month internship as a Full-Stack Software Engineer
-                                    (PHP) at Csquare Holdings Pvt Ltd. During this period, I applied coding best
-                                    practices under the guidance of senior developers, contributing to the development,
-                                    testing, and maintenance of software applications.
-                                </p>
+                {/*                <p className="experience-paragraph">*/}
+                {/*                    Before this, I completed a six-month internship as a Full-Stack Software Engineer*/}
+                {/*                    (PHP) at Csquare Holdings Pvt Ltd. During this period, I applied coding best*/}
+                {/*                    practices under the guidance of senior developers, contributing to the development,*/}
+                {/*                    testing, and maintenance of software applications.*/}
+                {/*                </p>*/}
 
-                                <ul className="experience-details-list">
-                                    <li>Contributed to development, testing, and maintenance of applications</li>
-                                    <li>Executed test plans to ensure software quality</li>
-                                    <li>Identified and resolved bugs to enhance performance</li>
-                                    <li>Gained experience in database design and management</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/*                <ul className="experience-details-list">*/}
+                {/*                    <li>Contributed to development, testing, and maintenance of applications</li>*/}
+                {/*                    <li>Executed test plans to ensure software quality</li>*/}
+                {/*                    <li>Identified and resolved bugs to enhance performance</li>*/}
+                {/*                    <li>Gained experience in database design and management</li>*/}
+                {/*                </ul>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
                 <div
                     className="separator"

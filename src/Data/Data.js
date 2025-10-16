@@ -23,6 +23,7 @@ export const projects = [
             "ico": "https://img.icons8.com/ios-filled/50/domain.png",
             "url": "https://asyadnazeem.github.io/mubarak-product/"
         }
+
     },
     {
         "id": 2,

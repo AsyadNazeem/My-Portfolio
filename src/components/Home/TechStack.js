@@ -13,7 +13,8 @@ const TechStack = () => {
       
       return () => window.removeEventListener('resize', handleResize);
     }, []);
-  
+
+
     return (
       <div className="language-logos">
         <div className="logo">
@@ -88,4 +89,3 @@ const TechStack = () => {
   };
   
   export default TechStack;
-  

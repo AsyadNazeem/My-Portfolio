@@ -63,18 +63,18 @@ export default function Navbar() {
                 >
                     <li className="Navbar-link">Education</li>
                 </Link>
-                <Link
-                    to="experience"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="nav-item"
-                    activeClass="active"
-                    onClick={closeNavbar}
-                >
-                    <li className="Navbar-link">Experience</li>
-                </Link>
+                {/*<Link*/}
+                {/*    to="experience"*/}
+                {/*    spy={true}*/}
+                {/*    smooth={true}*/}
+                {/*    offset={-70}*/}
+                {/*    duration={500}*/}
+                {/*    className="nav-item"*/}
+                {/*    activeClass="active"*/}
+                {/*    onClick={closeNavbar}*/}
+                {/*>*/}
+                {/*    <li className="Navbar-link">Experience</li>*/}
+                {/*</Link>*/}
                 <Link
                     to="projects"
                     spy={true}
