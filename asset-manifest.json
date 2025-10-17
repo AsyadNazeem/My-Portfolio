@@ -1,19 +1,25 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.593240b5.css",
-    "main.js": "/My-Portfolio/static/js/main.0241e092.js",
+    "main.js": "/My-Portfolio/static/js/main.e58ee0b3.js",
     "static/js/787.fc1d3d14.chunk.js": "/My-Portfolio/static/js/787.fc1d3d14.chunk.js",
     "static/media/mubarak.png": "/My-Portfolio/static/media/mubarak.fed39cdb09e989b7133d.png",
     "static/media/parkinson.png": "/My-Portfolio/static/media/parkinson.835355e94778935b72e3.png",
     "static/media/ERP.png": "/My-Portfolio/static/media/ERP.681f2255a4c4bc174f77.png",
     "static/media/profileImg.png": "/My-Portfolio/static/media/profileImg.506985bfe5894b67289f.png",
+    "static/media/Worksheet.png": "/My-Portfolio/static/media/Worksheet.886cfd9961fb7ed67fb1.png",
+    "static/media/SQL1.png": "/My-Portfolio/static/media/SQL1.e94cbdc4f9f3d1e5922b.png",
+    "static/media/SQL2.png": "/My-Portfolio/static/media/SQL2.8b64968f73886145d034.png",
+    "static/media/SQL3.png": "/My-Portfolio/static/media/SQL3.9c5806bb3bb9c92a5fc4.png",
+    "static/media/PivoteTable.png": "/My-Portfolio/static/media/PivoteTable.62d2041301e687714fb2.png",
+    "static/media/Dashboard.png": "/My-Portfolio/static/media/Dashboard.4ccbccc250040be4b128.png",
     "index.html": "/My-Portfolio/index.html",
     "main.593240b5.css.map": "/My-Portfolio/static/css/main.593240b5.css.map",
-    "main.0241e092.js.map": "/My-Portfolio/static/js/main.0241e092.js.map",
+    "main.e58ee0b3.js.map": "/My-Portfolio/static/js/main.e58ee0b3.js.map",
     "787.fc1d3d14.chunk.js.map": "/My-Portfolio/static/js/787.fc1d3d14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.593240b5.css",
-    "static/js/main.0241e092.js"
+    "static/js/main.e58ee0b3.js"
   ]
 }
