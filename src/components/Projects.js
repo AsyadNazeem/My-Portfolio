@@ -1,10 +1,24 @@
-import React from 'react';
-import { Code2, ExternalLink, Github } from 'lucide-react';
+import React, { useState } from 'react';
+import { Code2, ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useDarkMode } from './DarkModeContext';
 
 export default function Project({ item, index }) {
     const { isDarkMode } = useDarkMode();
     const isEven = index % 2 === 0;
+
+    // Handle multiple images
+    const images = item.images || [item.img];
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const nextImage = (e) => {
+        e.preventDefault();
+        setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    };
+
+    const prevImage = (e) => {
+        e.preventDefault();
+        setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+    };
 
     return (
         <>
@@ -12,13 +26,44 @@ export default function Project({ item, index }) {
                 {/* Project Image */}
                 <div className="project-image-container">
                     <div className="project-image-wrapper">
-                        <img src={item.img} alt={item.title} className="project-image" />
+                        <img
+                            src={images[currentImageIndex]}
+                            alt={`${item.title} - Image ${currentImageIndex + 1}`}
+                            className="project-image"
+                        />
                         <div className="project-image-overlay">
                             <div className="overlay-content">
                                 <Code2 className="overlay-icon" />
                                 <p className="overlay-text">View Project</p>
                             </div>
                         </div>
+
+                        {/* Navigation Arrows - Only show if multiple images */}
+                        {images.length > 1 && (
+                            <div className="image-navigation">
+                                <button
+                                    className="nav-arrow nav-arrow-left"
+                                    onClick={prevImage}
+                                    aria-label="Previous image"
+                                >
+                                    <ChevronLeft />
+                                </button>
+                                <button
+                                    className="nav-arrow nav-arrow-right"
+                                    onClick={nextImage}
+                                    aria-label="Next image"
+                                >
+                                    <ChevronRight />
+                                </button>
+                            </div>
+                        )}
+
+                        {/* Image Counter */}
+                        {images.length > 1 && (
+                            <div className="image-counter">
+                                {currentImageIndex + 1} / {images.length}
+                            </div>
+                        )}
                     </div>
                     <div className="image-decoration"></div>
                 </div>
@@ -110,8 +155,8 @@ export default function Project({ item, index }) {
                     border-radius: 16px;
                     overflow: hidden;
                     box-shadow: ${isDarkMode
-                            ? '0 10px 40px rgba(0, 0, 0, 0.5)'
-                            : '0 10px 40px rgba(0, 0, 0, 0.15)'};
+                ? '0 10px 40px rgba(0, 0, 0, 0.5)'
+                : '0 10px 40px rgba(0, 0, 0, 0.15)'};
                     transition: all 0.4s ease;
                     z-index: 2;
                     border: 1px solid ${isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'transparent'};
@@ -120,8 +165,8 @@ export default function Project({ item, index }) {
                 .project-card:hover .project-image-wrapper {
                     transform: translateY(-8px);
                     box-shadow: ${isDarkMode
-                            ? '0 20px 60px rgba(0, 0, 0, 0.7)'
-                            : '0 20px 60px rgba(0, 0, 0, 0.25)'};
+                ? '0 20px 60px rgba(0, 0, 0, 0.7)'
+                : '0 20px 60px rgba(0, 0, 0, 0.25)'};
                 }
 
                 .project-image {
@@ -147,6 +192,7 @@ export default function Project({ item, index }) {
                     justify-content: center;
                     opacity: 0;
                     transition: opacity 0.3s ease;
+                    z-index: 2;
                 }
 
                 .project-card:hover .project-image-overlay {
@@ -168,6 +214,72 @@ export default function Project({ item, index }) {
                     font-size: 16px;
                     font-weight: 600;
                     margin: 0;
+                }
+
+                /* Image Navigation Arrows */
+                .image-navigation {
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    display: flex;
+                    gap: 8px;
+                    z-index: 3;
+                }
+
+                .nav-arrow {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: ${isDarkMode
+                ? 'rgba(15, 23, 42, 0.8)'
+                : 'rgba(255, 255, 255, 0.9)'};
+                    border: 1px solid ${isDarkMode
+                ? 'rgba(255, 255, 255, 0.2)'
+                : 'rgba(0, 0, 0, 0.1)'};
+                    backdrop-filter: blur(10px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    color: ${isDarkMode ? '#f1f5f9' : '#1a1a1a'};
+                }
+
+                .nav-arrow:hover {
+                    background: linear-gradient(135deg, #3498db 0%, #8b5cf6 100%);
+                    color: white;
+                    transform: scale(1.1);
+                    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+                    border-color: transparent;
+                }
+
+                .nav-arrow:active {
+                    transform: scale(0.95);
+                }
+
+                .nav-arrow svg {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                /* Image Counter */
+                .image-counter {
+                    position: absolute;
+                    bottom: 16px;
+                    right: 16px;
+                    padding: 8px 16px;
+                    background: ${isDarkMode
+                ? 'rgba(15, 23, 42, 0.8)'
+                : 'rgba(255, 255, 255, 0.9)'};
+                    border: 1px solid ${isDarkMode
+                ? 'rgba(255, 255, 255, 0.2)'
+                : 'rgba(0, 0, 0, 0.1)'};
+                    backdrop-filter: blur(10px);
+                    border-radius: 20px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: ${isDarkMode ? '#cbd5e1' : '#555'};
+                    z-index: 3;
                 }
 
                 .image-decoration {
@@ -233,8 +345,8 @@ export default function Project({ item, index }) {
                     border-radius: 12px;
                     padding: 24px;
                     box-shadow: ${isDarkMode
-                            ? '0 4px 20px rgba(0, 0, 0, 0.3)'
-                            : '0 4px 20px rgba(0, 0, 0, 0.08)'};
+                ? '0 4px 20px rgba(0, 0, 0, 0.3)'
+                : '0 4px 20px rgba(0, 0, 0, 0.08)'};
                     border: 1px solid ${isDarkMode ? 'rgba(255, 255, 255, 0.1)' : '#f0f0f0'};
                     position: relative;
                     z-index: 3;
@@ -287,8 +399,8 @@ export default function Project({ item, index }) {
                     display: inline-block;
                     padding: 8px 16px;
                     background: ${isDarkMode
-                            ? 'rgba(52, 152, 219, 0.15)'
-                            : 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)'};
+                ? 'rgba(52, 152, 219, 0.15)'
+                : 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)'};
                     color: ${isDarkMode ? '#60a5fa' : '#3498db'};
                     font-size: 14px;
                     font-weight: 600;
@@ -336,8 +448,8 @@ export default function Project({ item, index }) {
                     color: ${isDarkMode ? 'white' : '#1a1a1a'};
                     transform: translateY(-2px);
                     box-shadow: ${isDarkMode
-                            ? '0 6px 20px rgba(0, 0, 0, 0.3)'
-                            : '0 6px 20px rgba(0, 0, 0, 0.15)'};
+                ? '0 6px 20px rgba(0, 0, 0, 0.3)'
+                : '0 6px 20px rgba(0, 0, 0, 0.15)'};
                 }
 
                 .demo-link {
@@ -432,6 +544,21 @@ export default function Project({ item, index }) {
 
                     .tech-tag {
                         font-size: 13px;
+                        padding: 6px 12px;
+                    }
+
+                    .nav-arrow {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    .nav-arrow svg {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .image-counter {
+                        font-size: 12px;
                         padding: 6px 12px;
                     }
                 }

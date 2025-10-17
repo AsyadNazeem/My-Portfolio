@@ -9,7 +9,7 @@ export default function ContactSection({ onViewResume, onDownloadResume }) {
         {
             icon: <MapPin className="contact-icon" />,
             title: "Location",
-            value: "Colombo, Sri Lanka",
+            value: "Galle, Sri Lanka",
             gradient: "from-red-500 to-orange-500"
         },
         {
@@ -109,7 +109,7 @@ export default function ContactSection({ onViewResume, onDownloadResume }) {
         }
 
         .contact-container {
-          max-width: 1030px;
+          max-width: 1200px;
           margin: 0 auto;
         }
 
