@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.593240b5.css",
-    "main.js": "/My-Portfolio/static/js/main.37c0b16f.js",
+    "main.js": "/My-Portfolio/static/js/main.afb63395.js",
     "static/js/787.fc1d3d14.chunk.js": "/My-Portfolio/static/js/787.fc1d3d14.chunk.js",
     "static/media/mubarak.png": "/My-Portfolio/static/media/mubarak.fed39cdb09e989b7133d.png",
     "static/media/parkinson.png": "/My-Portfolio/static/media/parkinson.835355e94778935b72e3.png",
     "static/media/ERP.png": "/My-Portfolio/static/media/ERP.681f2255a4c4bc174f77.png",
+    "static/media/Mubarak_BA_Project_Report.pdf": "/My-Portfolio/static/media/Mubarak_BA_Project_Report.04175fc063d59eeb27b1.pdf",
     "static/media/profileImg.png": "/My-Portfolio/static/media/profileImg.506985bfe5894b67289f.png",
     "static/media/Worksheet.png": "/My-Portfolio/static/media/Worksheet.886cfd9961fb7ed67fb1.png",
     "static/media/SQL1.png": "/My-Portfolio/static/media/SQL1.e94cbdc4f9f3d1e5922b.png",
@@ -14,13 +15,15 @@
     "static/media/PivoteTable.png": "/My-Portfolio/static/media/PivoteTable.62d2041301e687714fb2.png",
     "static/media/AsyadNazeemResume.pdf": "/My-Portfolio/static/media/AsyadNazeemResume.bf7148697a44b0ca963f.pdf",
     "static/media/Dashboard.png": "/My-Portfolio/static/media/Dashboard.4ccbccc250040be4b128.png",
+    "static/media/ExcelProjectDataset.xlsx": "/My-Portfolio/static/media/ExcelProjectDataset.7fdd331f1ccc88f976a5.xlsx",
+    "static/media/MubarakBA.png": "/My-Portfolio/static/media/MubarakBA.aa4a425b671ed217404f.png",
     "index.html": "/My-Portfolio/index.html",
     "main.593240b5.css.map": "/My-Portfolio/static/css/main.593240b5.css.map",
-    "main.37c0b16f.js.map": "/My-Portfolio/static/js/main.37c0b16f.js.map",
+    "main.afb63395.js.map": "/My-Portfolio/static/js/main.afb63395.js.map",
     "787.fc1d3d14.chunk.js.map": "/My-Portfolio/static/js/787.fc1d3d14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.593240b5.css",
-    "static/js/main.37c0b16f.js"
+    "static/js/main.afb63395.js"
   ]
 }
