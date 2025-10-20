@@ -7,16 +7,19 @@ import BikeSales3 from '../components/images/Dashboard.png';
 import Sql1 from '../components/images/SQL1.png';
 import Sql2 from '../components/images/SQL2.png';
 import Sql3 from '../components/images/SQL3.png';
+import mubarakBA from "../components/images/MubarakBA.png";
 
-
+// Import your PDF file
+import mubarakBAPdf from '../components/files/Mubarak_BA_Project_Report.pdf';
+import BikeSales from '../components/files/ExcelProjectDataset.xlsx';
 
 export const projects = [
     {
         "id": 1,
-        "img": mubarak, // Keep this for backward compatibility
-        "images": [mubarak], // New: Array of images (max 5)
+        "img": mubarak,
+        "images": [mubarak],
         "title": "Mubarak Products",
-        "description": "A website for a local business, Mubarak \n Enterprises. Built using React.js, Vite and Tailwind.",
+        "description": "A website for a <b>local business</b>, Mubarak Enterprises. Built using <b>React.js</b>, <b>Vite</b>, and <b>Tailwind CSS</b> to create a clean and responsive online presence.",
         "category": "Full Stack Development",
         "languages": {
             "lang1": "React Js",
@@ -37,9 +40,9 @@ export const projects = [
     {
         "id": 2,
         "img": parkinson,
-        "images": [parkinson], // Two images for this project
+        "images": [parkinson],
         "title": "Parkinson's Disease Detection",
-        "description": "A full-stack web app developed using Laravel (PHP), Python, Streamlit, and Scikit-learn to detect Parkinson's Disease from voice measurements. The frontend is styled using HTML and CSS.",
+        "description": "A <b>full-stack web app</b> developed using <b>Laravel (PHP)</b>, <b>Python</b>, <b>Streamlit</b>, and <b>Scikit-learn</b> to detect <b>Parkinson's Disease</b> from voice measurements. The frontend is styled using <b>HTML</b> and <b>CSS</b>.",
         "category": "Full Stack Development",
         "languages": {
             "lang1": "Python / Streamlit",
@@ -49,7 +52,7 @@ export const projects = [
         "links1": {
             "code": "Code",
             "ico": "https://img.icons8.com/ios-filled/50/github.png",
-            "url": "https://github.com/AsyadNazeem/parkinsons-disease-detection"
+            "url": "https://github.com/AsyadNazeem/parkison-disease-app.git"
         },
         "links2": {
             "demo": "Demo",
@@ -60,17 +63,16 @@ export const projects = [
     {
         "id": 3,
         "img": ERP,
-        "images": [ERP], // Maximum 5 images
+        "images": [ERP],
         "title": "Enterprise Resource Planning System",
-        "description": "An Enterprise Resource Planning System \n did as an Individual project for an university assignment \n using HTML,CSS/BootStrap, JavaScript, " +
-            " \n PHP and MySql. ",
+        "description": "An <b>Enterprise Resource Planning System</b> developed as an <b>individual university project</b> using <b>HTML</b>, <b>CSS/Bootstrap</b>, <b>JavaScript</b>, <b>PHP</b>, and <b>MySQL</b> to streamline business operations and management.",
         "category": "Full Stack Development",
         "languages": {
             "lang1": "HTML",
             "lang2": "CSS/Bootstrap",
             "lang3": "JavaScript",
             "lang4": "PHP",
-            "lang5": "MySQL",
+            "lang5": "MySQL"
         },
         "links1": {
             "code": "Code",
@@ -82,13 +84,12 @@ export const projects = [
             "ico": "https://img.icons8.com/ios-filled/50/domain.png"
         }
     },
-
     {
         "id": 4,
         "img": BikeSales1,
-        "images": [BikeSales1,BikeSales2,BikeSales3], // Maximum 5 images
+        "images": [BikeSales1, BikeSales2, BikeSales3],
         "title": "Sales Data Analysis & Visualization",
-        "description": "Conducted a full-cycle sales data analysis using **Microsoft Excel**, mastering **data cleaning, aggregation, and conditional formatting**. Successfully built comprehensive **dashboards and Pivot Tables** to effectively visualize sales trends and communicate actionable business insights.",
+        "description": "Conducted a full-cycle <b>sales data analysis</b> using <b>Microsoft Excel</b>, mastering <b>data cleaning</b>, <b>aggregation</b>, and <b>conditional formatting</b>. Successfully built comprehensive <b>dashboards</b> and <b>Pivot Tables</b> to effectively visualize <b>sales trends</b> and communicate <b>actionable business insights</b>.",
         "category": "Data Analysis",
         "languages": {
             "lang1": "Microsoft Excel",
@@ -101,14 +102,19 @@ export const projects = [
             "code": "Report/Workbook",
             "ico": "https://img.icons8.com/ios-filled/50/document--v1.png",
             "url": "[Insert link to your Excel workbook or PDF report here]"
+        },
+        file: {
+            type: "pdf", // or "doc", "docx"
+            path: BikeSales, // imported file path
+            name: "ExcelProjectDataset.xlsx" // display name
         }
     },
     {
-        "id": 6,
+        "id": 5,
         "img": Sql1,
-        "images": [Sql1,Sql2,Sql3], // Maximum 5 images
+        "images": [Sql1, Sql2, Sql3],
         "title": "Advanced SQL Analysis, Ranking, and Automation",
-        "description": "Executed complex employee data analysis using **Advanced SQL**. Utilized **Window Functions** for calculating rolling aggregates and employee rankings by salary. Implemented **CTEs** for modular queries, and leveraged **Stored Procedures, Triggers, and Events** for database automation and management.",
+        "description": "Executed complex <b>employee data analysis</b> using <b>Advanced SQL</b>. Utilized <b>Window Functions (RANK, ROW_NUMBER)</b> for calculating <b>rolling aggregates</b> and <b>employee rankings</b> by salary. Implemented <b>CTEs</b> for modular queries, and leveraged <b>Stored Procedures</b>, <b>Triggers</b>, and <b>Events</b> for <b>database automation</b> and <b>management</b>.",
         "category": "Data Analysis",
         "languages": {
             "lang1": "MySQL",
@@ -120,9 +126,34 @@ export const projects = [
         "links1": {
             "code": "SQL Script (GitHub)",
             "ico": "https://img.icons8.com/ios-filled/50/github.png",
-            "url": "[Insert link to your GitHub repository with the final SQL script here]"
+            "url": "https://github.com/AsyadNazeem/advanced-sql-analysis.git"
+        }
+    },
+    {
+        id: 6,
+        img: mubarakBA,
+        images: [mubarakBA],
+        title: "Mubarak Products – Business Analysis Project",
+        description:
+            "A complete <b>Business Analysis Project</b> conducted for a real-world small-scale family business. Included <b>Stakeholder Analysis</b>, <b>Requirement Gathering</b>, <b>AS-IS & TO-BE Process Mapping</b>, <b>ER & UML Diagrams</b>, and <b>System Design Proposal</b> for digital transformation of the business operations.",
+        category: "Business Analysis",
+        languages: {
+            lang1: "Business Process Modeling (AS-IS / TO-BE)",
+            lang2: "Requirement Documentation (FRD / NFRD)",
+            lang3: "ER Diagram & UML (Use Case, Activity, Sequence)",
+            lang4: "Stakeholder & System Analysis",
+            lang5: "System Design Proposal"
+        },
+        links1: {
+            code: "View Project (PDF)",
+            ico: "https://img.icons8.com/ios-filled/50/pdf.png",
+            url: "https://github.com/AsyadNazeem/Mubarak-Products-BA-Project.git"
+        },
+        // NEW: Add file property for downloadable/viewable documents
+        file: {
+            type: "pdf", // or "doc", "docx"
+            path: mubarakBAPdf, // imported file path
+            name: "Mubarak_BA_Project_Report.pdf" // display name
         }
     }
-
-
 ]

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Resume from "../images/AsyadNazeemResume.pdf";
+import Resume from "../files/AsyadNazeemResume.pdf";
 import Navbar from "../Navbar";
 import Headroom from "react-headroom";
 import {projects} from "../../Data/Data";

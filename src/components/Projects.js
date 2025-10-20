@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code2, ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Code2, ExternalLink, Github, ChevronLeft, ChevronRight, FileText } from 'lucide-react';
 import { useDarkMode } from './DarkModeContext';
 
 export default function Project({ item, index }) {
@@ -76,7 +76,7 @@ export default function Project({ item, index }) {
                     </div>
 
                     <div className="project-description-card">
-                        <p className="project-description">{item.description}</p>
+                        <p className="project-description" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                     </div>
 
                     {/* Tech Stack */}
@@ -119,6 +119,21 @@ export default function Project({ item, index }) {
                                 <span>{item.links2.demo || 'Live Demo'}</span>
                             </a>
                         )}
+
+                        {/* File Link - Only show if file exists */}
+                        {item.file && (
+                            <a
+                                href={item.file.path}
+                                className="project-link file-link"
+                                target="_blank"
+                                rel="noreferrer"
+                                download={item.file.name}
+                            >
+                                <FileText className="link-icon" />
+                                <span>Download Full Report ({item.file.type.toUpperCase()})</span>
+                                <ExternalLink className="external-icon" />
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
@@ -155,8 +170,8 @@ export default function Project({ item, index }) {
                     border-radius: 16px;
                     overflow: hidden;
                     box-shadow: ${isDarkMode
-                ? '0 10px 40px rgba(0, 0, 0, 0.5)'
-                : '0 10px 40px rgba(0, 0, 0, 0.15)'};
+                            ? '0 10px 40px rgba(0, 0, 0, 0.5)'
+                            : '0 10px 40px rgba(0, 0, 0, 0.15)'};
                     transition: all 0.4s ease;
                     z-index: 2;
                     border: 1px solid ${isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'transparent'};
@@ -165,8 +180,8 @@ export default function Project({ item, index }) {
                 .project-card:hover .project-image-wrapper {
                     transform: translateY(-8px);
                     box-shadow: ${isDarkMode
-                ? '0 20px 60px rgba(0, 0, 0, 0.7)'
-                : '0 20px 60px rgba(0, 0, 0, 0.25)'};
+                            ? '0 20px 60px rgba(0, 0, 0, 0.7)'
+                            : '0 20px 60px rgba(0, 0, 0, 0.25)'};
                 }
 
                 .project-image {
@@ -231,11 +246,11 @@ export default function Project({ item, index }) {
                     height: 40px;
                     border-radius: 50%;
                     background: ${isDarkMode
-                ? 'rgba(15, 23, 42, 0.8)'
-                : 'rgba(255, 255, 255, 0.9)'};
+                            ? 'rgba(15, 23, 42, 0.8)'
+                            : 'rgba(255, 255, 255, 0.9)'};
                     border: 1px solid ${isDarkMode
-                ? 'rgba(255, 255, 255, 0.2)'
-                : 'rgba(0, 0, 0, 0.1)'};
+                            ? 'rgba(255, 255, 255, 0.2)'
+                            : 'rgba(0, 0, 0, 0.1)'};
                     backdrop-filter: blur(10px);
                     display: flex;
                     align-items: center;
@@ -269,11 +284,11 @@ export default function Project({ item, index }) {
                     right: 16px;
                     padding: 8px 16px;
                     background: ${isDarkMode
-                ? 'rgba(15, 23, 42, 0.8)'
-                : 'rgba(255, 255, 255, 0.9)'};
+                            ? 'rgba(15, 23, 42, 0.8)'
+                            : 'rgba(255, 255, 255, 0.9)'};
                     border: 1px solid ${isDarkMode
-                ? 'rgba(255, 255, 255, 0.2)'
-                : 'rgba(0, 0, 0, 0.1)'};
+                            ? 'rgba(255, 255, 255, 0.2)'
+                            : 'rgba(0, 0, 0, 0.1)'};
                     backdrop-filter: blur(10px);
                     border-radius: 20px;
                     font-size: 13px;
@@ -345,8 +360,8 @@ export default function Project({ item, index }) {
                     border-radius: 12px;
                     padding: 24px;
                     box-shadow: ${isDarkMode
-                ? '0 4px 20px rgba(0, 0, 0, 0.3)'
-                : '0 4px 20px rgba(0, 0, 0, 0.08)'};
+                            ? '0 4px 20px rgba(0, 0, 0, 0.3)'
+                            : '0 4px 20px rgba(0, 0, 0, 0.08)'};
                     border: 1px solid ${isDarkMode ? 'rgba(255, 255, 255, 0.1)' : '#f0f0f0'};
                     position: relative;
                     z-index: 3;
@@ -399,8 +414,8 @@ export default function Project({ item, index }) {
                     display: inline-block;
                     padding: 8px 16px;
                     background: ${isDarkMode
-                ? 'rgba(52, 152, 219, 0.15)'
-                : 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)'};
+                            ? 'rgba(52, 152, 219, 0.15)'
+                            : 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)'};
                     color: ${isDarkMode ? '#60a5fa' : '#3498db'};
                     font-size: 14px;
                     font-weight: 600;
@@ -448,8 +463,8 @@ export default function Project({ item, index }) {
                     color: ${isDarkMode ? 'white' : '#1a1a1a'};
                     transform: translateY(-2px);
                     box-shadow: ${isDarkMode
-                ? '0 6px 20px rgba(0, 0, 0, 0.3)'
-                : '0 6px 20px rgba(0, 0, 0, 0.15)'};
+                            ? '0 6px 20px rgba(0, 0, 0, 0.3)'
+                            : '0 6px 20px rgba(0, 0, 0, 0.15)'};
                 }
 
                 .demo-link {
@@ -462,6 +477,18 @@ export default function Project({ item, index }) {
                     background: linear-gradient(135deg, #2980b9 0%, #1c5d8b 100%);
                     transform: translateY(-2px);
                     box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+                }
+
+                .file-link {
+                    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+                    color: white;
+                    border: 2px solid transparent;
+                }
+
+                .file-link:hover {
+                    background: linear-gradient(135deg, #6d28d9 0%, #5b21b6 100%);
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
                 }
 
                 .link-icon {
