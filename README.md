@@ -85,19 +85,19 @@ Deployed via GitHub Pages:
 Section	Screenshot
 
 ### 1. Home Page	
-![Home Page](screenshots/home.png)  
+![Home Page](screentshots/home.png)  
 
 Projects	
 ### 2. Projects Page	
-![Projects Page](screenshots/projects.png)  
+![Projects Page](screentshots/projects.png)  
 
 Education	
 ### 2. Education Page	
-![Education Page](screenshots/education.png)  
+![Education Page](screentshots/education.png)  
 
 Contact	
 ### 2. Contact Page	
-![Contact Page](screenshots/contact.png)  
+![Contact Page](screentshots/contact.png)  
 
 ---
 
