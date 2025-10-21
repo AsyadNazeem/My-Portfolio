@@ -89,7 +89,7 @@ Section	Screenshot
 
 Projects	
 ### 2. Projects Page	
-![Projects Page](screentshots/projects.png)  
+![Projects Page](screentshots/project.png)  
 
 Education	
 ### 2. Education Page	
