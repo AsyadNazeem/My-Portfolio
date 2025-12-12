@@ -1,29 +1,34 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.593240b5.css",
-    "main.js": "/My-Portfolio/static/js/main.afb63395.js",
+    "main.js": "/My-Portfolio/static/js/main.8c72f6e7.js",
     "static/js/787.fc1d3d14.chunk.js": "/My-Portfolio/static/js/787.fc1d3d14.chunk.js",
     "static/media/mubarak.png": "/My-Portfolio/static/media/mubarak.fed39cdb09e989b7133d.png",
     "static/media/parkinson.png": "/My-Portfolio/static/media/parkinson.835355e94778935b72e3.png",
     "static/media/ERP.png": "/My-Portfolio/static/media/ERP.681f2255a4c4bc174f77.png",
+    "static/media/card.png": "/My-Portfolio/static/media/card.c10c8fc199040f3c4d69.png",
     "static/media/Mubarak_BA_Project_Report.pdf": "/My-Portfolio/static/media/Mubarak_BA_Project_Report.04175fc063d59eeb27b1.pdf",
     "static/media/profileImg.png": "/My-Portfolio/static/media/profileImg.506985bfe5894b67289f.png",
+    "static/media/tapmyname_login.png": "/My-Portfolio/static/media/tapmyname_login.79dae840a5f7f7c89824.png",
     "static/media/Worksheet.png": "/My-Portfolio/static/media/Worksheet.886cfd9961fb7ed67fb1.png",
+    "static/media/contact.png": "/My-Portfolio/static/media/contact.29f7b837957c8a67556d.png",
+    "static/media/home.png": "/My-Portfolio/static/media/home.a94487cb0808b7eddcdb.png",
     "static/media/SQL1.png": "/My-Portfolio/static/media/SQL1.e94cbdc4f9f3d1e5922b.png",
     "static/media/SQL2.png": "/My-Portfolio/static/media/SQL2.8b64968f73886145d034.png",
     "static/media/SQL3.png": "/My-Portfolio/static/media/SQL3.9c5806bb3bb9c92a5fc4.png",
     "static/media/PivoteTable.png": "/My-Portfolio/static/media/PivoteTable.62d2041301e687714fb2.png",
+    "static/media/setting.png": "/My-Portfolio/static/media/setting.ebf90983807f67c786b9.png",
     "static/media/AsyadNazeemResume.pdf": "/My-Portfolio/static/media/AsyadNazeemResume.bf7148697a44b0ca963f.pdf",
     "static/media/Dashboard.png": "/My-Portfolio/static/media/Dashboard.4ccbccc250040be4b128.png",
     "static/media/ExcelProjectDataset.xlsx": "/My-Portfolio/static/media/ExcelProjectDataset.7fdd331f1ccc88f976a5.xlsx",
     "static/media/MubarakBA.png": "/My-Portfolio/static/media/MubarakBA.aa4a425b671ed217404f.png",
     "index.html": "/My-Portfolio/index.html",
     "main.593240b5.css.map": "/My-Portfolio/static/css/main.593240b5.css.map",
-    "main.afb63395.js.map": "/My-Portfolio/static/js/main.afb63395.js.map",
+    "main.8c72f6e7.js.map": "/My-Portfolio/static/js/main.8c72f6e7.js.map",
     "787.fc1d3d14.chunk.js.map": "/My-Portfolio/static/js/787.fc1d3d14.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.593240b5.css",
-    "static/js/main.afb63395.js"
+    "static/js/main.8c72f6e7.js"
   ]
 }
