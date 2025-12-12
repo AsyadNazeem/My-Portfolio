@@ -8,6 +8,12 @@ import Sql1 from '../components/images/SQL1.png';
 import Sql2 from '../components/images/SQL2.png';
 import Sql3 from '../components/images/SQL3.png';
 import mubarakBA from "../components/images/MubarakBA.png";
+import TapMyNameImg from "../components/images/tapmyname_login.png";
+import card from "../components/images/card.png";
+import contact from "../components/images/contact.png";
+import home from "../components/images/home.png";
+import settings from "../components/images/setting.png";
+
 
 // Import your PDF file
 import mubarakBAPdf from '../components/files/Mubarak_BA_Project_Report.pdf';
@@ -15,7 +21,32 @@ import BikeSales from '../components/files/ExcelProjectDataset.xlsx';
 
 export const projects = [
     {
-        "id": 1,
+        id: 1,
+        img: TapMyNameImg, // import this at the top
+        images: [TapMyNameImg, home, contact, card, settings],
+        title: "TapMyName Digital Contact Card",
+        description:
+            "A complete digital contact card platform developed using <b>Vite</b>, <b>Node.js</b>, <b>MYSQL</b> and <b>DOCKER</b>. The system supports <b>Google Authentication</b>, <b>JWT based secure sessions</b>, and <b>Google OTP verification</b> for account protection. Users can create personalized contact cards, manage social links, and add their details to the <b>Google Wallet</b> pass format for instant sharing. The platform includes an <b>Admin Panel</b> for user management, analytics, and system control. Designed to deliver a smooth user experience with scalable features for future expansion.",
+        category: "Full Stack Development",
+        languages: {
+            lang1: "Vite",
+            lang2: "Node Js",
+            lang3: "MYSQL",
+            lang4: "DOCKER"
+        },
+        links1: {
+            code: "Code",
+            ico: "https://img.icons8.com/ios-filled/50/github.png",
+            url: "https://github.com/AsyadNazeem/digital-card.git"
+        },
+        links2: {
+            demo: "Demo",
+            ico: "https://img.icons8.com/ios-filled/50/domain.png",
+            url: "https://tapmy.name/login"
+        }
+    },
+    {
+        "id": 2,
         "img": mubarak,
         "images": [mubarak],
         "title": "Mubarak Products",
@@ -38,7 +69,7 @@ export const projects = [
         }
     },
     {
-        "id": 2,
+        "id": 3,
         "img": parkinson,
         "images": [parkinson],
         "title": "Parkinson's Disease Detection",
@@ -61,7 +92,7 @@ export const projects = [
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "img": ERP,
         "images": [ERP],
         "title": "Enterprise Resource Planning System",
@@ -85,7 +116,7 @@ export const projects = [
         }
     },
     {
-        "id": 4,
+        "id": 5,
         "img": BikeSales1,
         "images": [BikeSales1, BikeSales2, BikeSales3],
         "title": "Sales Data Analysis & Visualization",
@@ -110,7 +141,7 @@ export const projects = [
         }
     },
     {
-        "id": 5,
+        "id": 6,
         "img": Sql1,
         "images": [Sql1, Sql2, Sql3],
         "title": "Advanced SQL Analysis, Ranking, and Automation",
@@ -130,7 +161,7 @@ export const projects = [
         }
     },
     {
-        id: 6,
+        id: 7,
         img: mubarakBA,
         images: [mubarakBA],
         title: "Mubarak Products – Business Analysis Project",
